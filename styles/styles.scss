@@ -8,40 +8,48 @@ body {
    min-width: 320px;
 }
 
-header {
+.header {
    background-color: #f8f9fa;
-   padding: 20px;
+   padding: 1rem;
    position: relative;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+   width: 100%;
 
-   .logo,
-   .menu {
+   &__title {
+      font-family: Raleway;
+      font-weight: 300;
+      color: #08A6E4;
+      left: 20px;
+   }
+
+   &__menu {
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
       height: auto;
-   }
-
-   .logo {
-      left: 20px;
-   }
-
-   .menu {
       right: 20px;
    }
 
-   .link {
+   &__links {
       display: none;
    }
 }
 
-.logo,
-.menu {
-   position: absolute;
-   top: 50%;
-   transform: translateY(-50%);
-   max-width: 150px;
-   height: auto;
+.foto {
+   width: 100%;
 }
+
+.foto img{
+   width: 100%;
+}
+// .logo,
+// .menu {
+//    position: absolute;
+//    top: 50%;
+//    transform: translateY(-50%);
+//    max-width: 150px;
+//    height: auto;
+// }
 
 sell {}
 
