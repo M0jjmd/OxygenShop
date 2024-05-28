@@ -75,16 +75,13 @@ body {
   padding: 1rem;
 }
 .popular__first {
-  text-align: center;
-  margin: 3rem auto;
   font-family: "Raleway";
 }
 .popular__first__img {
-  text-align: center;
-  margin: 0 auto;
   position: relative;
+  margin: 0 auto;
   width: 60%;
-  height: auto;
+  text-align: center;
 }
 .popular__first__img__ellipse1 {
   width: 50%;
@@ -103,20 +100,18 @@ body {
   text-align: center;
   letter-spacing: 0.1rem;
 }
-.popular__first__seenproducts {
-  font-weight: 300;
+.popular__first__dailyentries {
+  text-align: center;
+  font-weight: 400;
 }
 .popular__where {
-  text-align: center;
-  margin: 3rem auto;
   font-family: "Raleway";
 }
 .popular__where__img {
-  text-align: center;
   margin: 0 auto;
   position: relative;
   width: 60%;
-  height: auto;
+  text-align: center;
 }
 .popular__where__img__ellipse2 {
   width: 50%;
@@ -135,12 +130,11 @@ body {
   text-align: center;
   letter-spacing: 0.1rem;
 }
-.popular__where__dailyentries {
-  font-weight: 300;
+.popular__where__seenproducts {
+  text-align: center;
+  font-weight: 400;
 }
 .popular__recognition {
-  text-align: center;
-  margin: 3rem auto;
   font-family: "Raleway";
 }
 .popular__recognition__img {
@@ -150,24 +144,25 @@ body {
   width: 60%;
   height: auto;
 }
-.popular__recognition__img__ellipse1 {
+.popular__recognition__img__ellipse3 {
   width: 50%;
   height: auto;
 }
-.popular__recognition__img__person2 {
+.popular__recognition__img__catalog2 {
   position: absolute;
   bottom: 1rem;
-  left: 4.5rem;
+  left: 6rem;
   width: 40%;
   height: auto;
 }
-.popular__recognition__entries {
+.popular__recognition__posts {
   font-size: 2rem;
   font-weight: 700;
   text-align: center;
   letter-spacing: 0.1rem;
 }
-.popular__recognition__seenproducts {
+.popular__recognition__added {
+  text-align: center;
   font-weight: 300;
 }
 

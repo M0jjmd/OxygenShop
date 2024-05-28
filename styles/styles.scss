@@ -84,16 +84,16 @@ body {
    }
 
    &__first {
-      text-align: center;
-      margin: 3rem auto;
+      // text-align: center;
+      // margin: 3rem auto;
       font-family: "Raleway";
 
       &__img {
-         text-align: center;
-         margin: 0 auto;
+         
          position: relative;
+         margin: 0 auto;
          width: 60%;
-         height: auto;
+         text-align: center;
 
          &__ellipse1 {
             width: 50%;
@@ -117,22 +117,22 @@ body {
 
       }
 
-      &__seenproducts {
-         font-weight: 300;
+      &__dailyentries {
+         text-align: center;
+         font-weight: 400;
       }
    }
 
    &__where {
-      text-align: center;
-      margin: 3rem auto;
+      // text-align: center;
+      // margin: 3rem auto;
       font-family: "Raleway";
 
       &__img {
-         text-align: center;
          margin: 0 auto;
          position: relative;
          width: 60%;
-         height: auto;
+         text-align: center;
 
          &__ellipse2 {
             width: 50%;
@@ -156,14 +156,15 @@ body {
 
       }
 
-      &__dailyentries {
-         font-weight: 300;
+      &__seenproducts {
+         text-align: center;
+         font-weight: 400;
       }
    }
 
    &__recognition {
-      text-align: center;
-      margin: 3rem auto;
+      // text-align: center;
+      // margin: 3rem auto;
       font-family: "Raleway";
 
       &__img {
@@ -173,21 +174,21 @@ body {
          width: 60%;
          height: auto;
 
-         &__ellipse1 {
+         &__ellipse3 {
             width: 50%;
             height: auto;
          }
 
-         &__person2 {
+         &__catalog2 {
             position: absolute;
             bottom: 1rem;
-            left: 4.5rem;
+            left: 6rem;
             width: 40%;
             height: auto;
          }
       }
 
-      &__entries {
+      &__posts {
          font-size: 2rem;
          font-weight: 700;
          text-align: center;
@@ -195,7 +196,8 @@ body {
 
       }
 
-      &__seenproducts {
+      &__added {
+         text-align: center;
          font-weight: 300;
       }
    }
