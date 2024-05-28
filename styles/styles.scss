@@ -84,12 +84,40 @@ body {
    }
 
    &__first {
-      &__person2 {
+      text-align: center;
+      margin: 3rem auto;
+      font-family: "Raleway";
 
+      &__img {
+         text-align: center;
+         margin: 0 auto;
+         position: relative;
+         width: 60%;
+         height: auto;
+
+         &__ellipse1 {
+            width: 50%;
+            height: auto;
+         }
+
+         &__person2 {
+            position: absolute;
+            bottom: 1rem;
+            left: 4.5rem;
+            width: 40%;
+            height: auto;
+         }
       }
 
-      &__ellipse1 {
+      &__entriesnum {
+         font-weight: bold;
+         text-align: center;
+         letter-spacing: 0.1rem;
          
+      }
+
+      &__dailyentries {
+         font-weight: 200;
       }
    }
 }

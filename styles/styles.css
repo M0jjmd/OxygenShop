@@ -74,6 +74,38 @@ body {
   text-align: center;
   padding: 1rem;
 }
+.popular__first {
+  text-align: center;
+  margin: 3rem auto;
+  font-family: "Raleway";
+}
+.popular__first__img {
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  width: 60%;
+  height: auto;
+}
+.popular__first__img__ellipse1 {
+  width: 50%;
+  height: auto;
+}
+.popular__first__img__person2 {
+  position: absolute;
+  bottom: 1rem;
+  left: 4.5rem;
+  width: 40%;
+  height: auto;
+}
+.popular__first__entriesnum {
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 0.1rem;
+}
+.popular__first__dailyentries {
+  font-weight: 200;
+}
+
 .questions {
   display: table-cell;
   vertical-align: middle;
