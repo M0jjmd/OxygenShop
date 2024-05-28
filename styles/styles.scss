@@ -109,15 +109,94 @@ body {
          }
       }
 
-      &__entriesnum {
-         font-weight: bold;
+      &__entries {
+         font-size: 2rem;
+         font-weight: 700;
          text-align: center;
          letter-spacing: 0.1rem;
-         
+
+      }
+
+      &__seenproducts {
+         font-weight: 300;
+      }
+   }
+
+   &__where {
+      text-align: center;
+      margin: 3rem auto;
+      font-family: "Raleway";
+
+      &__img {
+         text-align: center;
+         margin: 0 auto;
+         position: relative;
+         width: 60%;
+         height: auto;
+
+         &__ellipse2 {
+            width: 50%;
+            height: auto;
+         }
+
+         &__eye2 {
+            position: absolute;
+            bottom: 2rem;
+            left: 6rem;
+            width: 40%;
+            height: auto;
+         }
+      }
+
+      &__seen {
+         font-size: 2rem;
+         font-weight: 700;
+         text-align: center;
+         letter-spacing: 0.1rem;
+
       }
 
       &__dailyentries {
-         font-weight: 200;
+         font-weight: 300;
+      }
+   }
+
+   &__recognition {
+      text-align: center;
+      margin: 3rem auto;
+      font-family: "Raleway";
+
+      &__img {
+         text-align: center;
+         margin: 0 auto;
+         position: relative;
+         width: 60%;
+         height: auto;
+
+         &__ellipse1 {
+            width: 50%;
+            height: auto;
+         }
+
+         &__person2 {
+            position: absolute;
+            bottom: 1rem;
+            left: 4.5rem;
+            width: 40%;
+            height: auto;
+         }
+      }
+
+      &__entries {
+         font-size: 2rem;
+         font-weight: 700;
+         text-align: center;
+         letter-spacing: 0.1rem;
+
+      }
+
+      &__seenproducts {
+         font-weight: 300;
       }
    }
 }

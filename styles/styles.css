@@ -97,13 +97,78 @@ body {
   width: 40%;
   height: auto;
 }
-.popular__first__entriesnum {
-  font-weight: bold;
+.popular__first__entries {
+  font-size: 2rem;
+  font-weight: 700;
   text-align: center;
   letter-spacing: 0.1rem;
 }
-.popular__first__dailyentries {
-  font-weight: 200;
+.popular__first__seenproducts {
+  font-weight: 300;
+}
+.popular__where {
+  text-align: center;
+  margin: 3rem auto;
+  font-family: "Raleway";
+}
+.popular__where__img {
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  width: 60%;
+  height: auto;
+}
+.popular__where__img__ellipse2 {
+  width: 50%;
+  height: auto;
+}
+.popular__where__img__eye2 {
+  position: absolute;
+  bottom: 2rem;
+  left: 6rem;
+  width: 40%;
+  height: auto;
+}
+.popular__where__seen {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0.1rem;
+}
+.popular__where__dailyentries {
+  font-weight: 300;
+}
+.popular__recognition {
+  text-align: center;
+  margin: 3rem auto;
+  font-family: "Raleway";
+}
+.popular__recognition__img {
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  width: 60%;
+  height: auto;
+}
+.popular__recognition__img__ellipse1 {
+  width: 50%;
+  height: auto;
+}
+.popular__recognition__img__person2 {
+  position: absolute;
+  bottom: 1rem;
+  left: 4.5rem;
+  width: 40%;
+  height: auto;
+}
+.popular__recognition__entries {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0.1rem;
+}
+.popular__recognition__seenproducts {
+  font-weight: 300;
 }
 
 .questions {
