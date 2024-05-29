@@ -151,39 +151,38 @@
   color: #A5A5A5;
 }
 
-.advertisements {
-  background-color: #F7F7F7;
-  display: block;
-  padding-top: 3rem;
-}
 .advertisements__first {
-  background-color: white;
-  height: 20rem;
-  width: 60%;
-  margin: 5rem auto;
-  padding: 3rem;
-  margin-top: 3rem;
+  text-align: center;
+  font-family: "Raleway";
 }
 .advertisements__first__img {
   position: relative;
+  display: inline-block;
   margin: 0 auto;
   text-align: center;
 }
-.advertisements__first__img__red-frame {
-  position: absolute;
-  right: 13%;
-  top: -30%;
-}
 .advertisements__first__img__macbook {
   position: relative;
-  margin: auto;
 }
-.advertisements__first__h2 {
-  font-family: "raleway";
+.advertisements__first__img__red-frame {
+  position: absolute;
+  right: -10%;
+  top: -30%;
 }
-.advertisements__first__p {
-  font-family: "Open Sans";
+.advertisements__first__entries {
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0.2rem;
 }
+.advertisements__first__dailyentries {
+  font-size: 1rem;
+  text-align: center;
+  font-weight: 400;
+  margin-top: 0.5rem;
+  color: #A5A5A5;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
