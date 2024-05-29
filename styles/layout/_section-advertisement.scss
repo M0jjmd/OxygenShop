@@ -1,6 +1,16 @@
 .advertisements {
+    background-color: #A5A5A5;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    width: 100%;
+
     &__first {
+        background-color: white;
+        margin: 0 auto;
+        width: 80%;
         text-align: center;
+        padding-top: 2rem;
+
         // margin: 3rem auto;
         font-family: "Raleway";
 
@@ -49,79 +59,3 @@
         }
     }
 }
-
-// background-color: #F7F7F7;
-// display: block;
-// padding-top: 1.5rem;
-// padding-bottom: 1.5rem;
-// width: 100%;
-// // margin: 0 auto;
-// // text-align: center;
-// // width: 100%;
-// // height: auto;
-// // height: 100px;
-
-// &__first {
-//     background-color: white;
-//     // display: inline-block;
-//     // width: 60%;
-//     // height: 1%;
-//     // margin: 3rem auto;
-//     //height: 20rem;
-//     width: 80%;
-//     margin: 5rem auto;
-//     padding: 3rem;
-//     margin-top: 3rem;
-//     border-radius: 0.4rem;
-//     // width: 60%;
-
-//     &__img {
-//         text-align: center;
-//         display: inline-block;
-//         width: 100%;
-//         position: relative;
-//         margin: 0 auto;
-//         text-align: center;
-//         width: auto;
-
-
-//         &__red-frame {
-//             position: absolute;
-//             right: 0%;
-//             top: -30%;
-//             // position: relative;
-//             // z-index: -1;
-//             // right: -40%;
-//             // top: -30%;
-
-//         }
-
-//         &__macbook {
-//             position: relative;
-//             margin: auto;
-
-//             // position: relative;
-//             // position: absolute;
-//             // top: 50%;
-//             // left: 50%;
-//             // transform: translate(-50%, -50%);
-
-
-
-//         }
-//     }
-
-//     &__h2 {
-//         font-family: "raleway";
-//         font-weight: 400;
-//     }
-
-//     &__p {
-//         font-family: "Open Sans";
-//         font-weight: 400;
-//     }
-// }
-
-// &__second {}
-
-// &third {}
