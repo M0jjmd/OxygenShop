@@ -1,3 +1,8 @@
+@import 'components/header';
+@import 'layout/section-sell';
+@import 'layout/div-foto';
+@import 'layout/section-popular';
+
 * {
    box-sizing: border-box;
    margin: 0;
@@ -8,213 +13,214 @@ body {
    min-width: 320px;
 }
 
-.header {
-   background-color: #f8f9fa;
-   padding: 1rem;
-   position: relative;
-   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-   width: 100%;
+// .header {
 
-   &__title {
-      font-family: "Raleway";
-      font-weight: 300;
-      color: #08A6E4;
-      left: 20px;
-   }
+//    background-color: #f8f9fa;
+//    padding: 1rem;
+//    position: relative;
+//    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+//    width: 100%;
 
-   &__menu {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      height: auto;
-      right: 20px;
-   }
+//    &__title {
+//       font-family: "Raleway";
+//       font-weight: 300;
+//       color: #08A6E4;
+//       left: 20px;
+//    }
 
-   &__links {
-      display: none;
-   }
-}
+//    &__menu {
+//       position: absolute;
+//       top: 50%;
+//       transform: translateY(-50%);
+//       height: auto;
+//       right: 20px;
+//    }
 
-.sell {
-   width: 60%;
-   text-align: center;
-   margin: 2.5rem auto;
+//    &__links {
+//       display: none;
+//    }
+// }
 
-   &__h2 {
-      font-family: "Raleway";
-      font-weight: 600;
-   }
+// .sell {
+//    width: 60%;
+//    text-align: center;
+//    margin: 2.5rem auto;
 
-   &__p {
-      font-family: "Open Sans";
-      font-weight: 300 bold;
-      margin: 1rem 0;
-   }
+//    &__h2 {
+//       font-family: "Raleway";
+//       font-weight: 600;
+//    }
 
-   &__button {
-      font-family: "Open Sans";
-      background-color: #08A6E4;
-      color: white;
-      font-weight: bold;
-      width: 100%;
-      height: 3.2rem;
-      border-radius: 30px;
-      outline: none;
-      border: none;
-   }
-}
+//    &__p {
+//       font-family: "Open Sans";
+//       font-weight: 300 bold;
+//       margin: 1rem 0;
+//    }
 
-.foto {
-   img {
-      width: 100%;
-   }
-}
+//    &__button {
+//       font-family: "Open Sans";
+//       background-color: #08A6E4;
+//       color: white;
+//       font-weight: bold;
+//       width: 100%;
+//       height: 3.2rem;
+//       border-radius: 30px;
+//       outline: none;
+//       border: none;
+//    }
+// }
 
-.popular {
-   // width: 75%;
-   // margin: 0 auto;
+// .foto {
+//    img {
+//       width: 100%;
+//    }
+// }
 
-   &__h2 {
-      font-family: "Raleway";
-      font-weight: 300;
-      font-size: 1.8rem;
-      margin: 0 auto;
-      text-align: center;
-      padding: 1rem;
-   }
+// .popular {
+//    // width: 75%;
+//    // margin: 0 auto;
 
-   &__first {
-      text-align: center;
-      // margin: 3rem auto;
-      font-family: "Raleway";
+//    &__h2 {
+//       font-family: "Raleway";
+//       font-weight: 300;
+//       font-size: 1.8rem;
+//       margin: 0 auto;
+//       text-align: center;
+//       padding: 1rem;
+//    }
 
-      &__img {
-         position: relative;
-         display: inline-block;
-         margin: 0 auto;
-         // width: 60%;
-         text-align: center;
-         // width: 400px;
+//    &__first {
+//       text-align: center;
+//       // margin: 3rem auto;
+//       font-family: "Raleway";
 
-         &__ellipse1 {
-            // width: 50%;
-            // height: auto;
+//       &__img {
+//          position: relative;
+//          display: inline-block;
+//          margin: 0 auto;
+//          // width: 60%;
+//          text-align: center;
+//          // width: 400px;
+
+//          &__ellipse1 {
+//             // width: 50%;
+//             // height: auto;
             
-         }
+//          }
 
-         &__person2 {
-            position: absolute;
-            // bottom: 1rem;
-            // left: 4.5rem;
-            right: -12%;
+//          &__person2 {
+//             position: absolute;
+//             // bottom: 1rem;
+//             // left: 4.5rem;
+//             right: -12%;
             
-            // width: 40%;
-            // height: auto;
+//             // width: 40%;
+//             // height: auto;
 
-         }
-      }
+//          }
+//       }
 
-      &__entries {
-         font-size: 2rem;
-         font-weight: 700;
-         text-align: center;
-         letter-spacing: 0.1rem;
+//       &__entries {
+//          font-size: 2rem;
+//          font-weight: 700;
+//          text-align: center;
+//          letter-spacing: 0.1rem;
 
-      }
+//       }
 
-      &__dailyentries {
-         text-align: center;
-         font-weight: 400;
-         color: #A5A5A5;
+//       &__dailyentries {
+//          text-align: center;
+//          font-weight: 400;
+//          color: #A5A5A5;
 
-      }
-   }
+//       }
+//    }
 
-   &__where {
-      text-align: center;
-      // margin: 3rem auto;
-      font-family: "Raleway";
+//    &__where {
+//       text-align: center;
+//       // margin: 3rem auto;
+//       font-family: "Raleway";
 
-      &__img {
-         position: relative;
-         display: inline-block;
-         margin: 0 auto;
-         // width: 60%;
-         // text-align: center;
+//       &__img {
+//          position: relative;
+//          display: inline-block;
+//          margin: 0 auto;
+//          // width: 60%;
+//          // text-align: center;
 
-         &__ellipse2 {
-            // margin: 0 auto;
-            // width: 50%;
-            // height: auto;
-         }
+//          &__ellipse2 {
+//             // margin: 0 auto;
+//             // width: 50%;
+//             // height: auto;
+//          }
 
-         &__eye2 {
-            position: absolute;
-            // bottom: 2rem;
-            right: -40%;
-            top: 18%;
-            // width: 40%;
-            // height: auto;
-         }
-      }
+//          &__eye2 {
+//             position: absolute;
+//             // bottom: 2rem;
+//             right: -40%;
+//             top: 18%;
+//             // width: 40%;
+//             // height: auto;
+//          }
+//       }
 
-      &__seen {
-         font-size: 2rem;
-         font-weight: 700;
-         text-align: center;
-         letter-spacing: 0.1rem;
+//       &__seen {
+//          font-size: 2rem;
+//          font-weight: 700;
+//          text-align: center;
+//          letter-spacing: 0.1rem;
 
-      }
+//       }
 
-      &__seenproducts {
-         text-align: center;
-         font-weight: 400;
-         color: #A5A5A5;
-      }
-   }
+//       &__seenproducts {
+//          text-align: center;
+//          font-weight: 400;
+//          color: #A5A5A5;
+//       }
+//    }
 
-   &__recognition {
-      text-align: center;
-      // margin: 3rem auto;
-      font-family: "Raleway";
+//    &__recognition {
+//       text-align: center;
+//       // margin: 3rem auto;
+//       font-family: "Raleway";
 
-      &__img {
-         text-align: center;
-         display: inline-block;
-         position: relative;
-         // width: 60%;
-         // height: auto;
+//       &__img {
+//          text-align: center;
+//          display: inline-block;
+//          position: relative;
+//          // width: 60%;
+//          // height: auto;
 
-         &__ellipse3 {
-            // width: 50%;
-            // height: auto;
-         }
+//          &__ellipse3 {
+//             // width: 50%;
+//             // height: auto;
+//          }
 
-         &__catalog2 {
-            position: absolute;
-            // bottom: 1rem;
-            right: -35%;
-            top: 10%;
-            // width: 40%;
-            // height: auto;
-         }
-      }
+//          &__catalog2 {
+//             position: absolute;
+//             // bottom: 1rem;
+//             right: -35%;
+//             top: 10%;
+//             // width: 40%;
+//             // height: auto;
+//          }
+//       }
 
-      &__posts {
-         font-size: 2rem;
-         font-weight: 700;
-         text-align: center;
-         letter-spacing: 0.1rem;
+//       &__posts {
+//          font-size: 2rem;
+//          font-weight: 700;
+//          text-align: center;
+//          letter-spacing: 0.1rem;
 
-      }
+//       }
 
-      &__added {
-         text-align: center;
-         font-weight: 400;
-         color: #A5A5A5;
-      }
-   }
-}
+//       &__added {
+//          text-align: center;
+//          font-weight: 400;
+//          color: #A5A5A5;
+//       }
+//    }
+// }
 
 // .foto img{
 //    width: 100%;

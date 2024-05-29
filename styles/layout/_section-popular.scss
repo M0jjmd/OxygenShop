@@ -1,0 +1,145 @@
+.popular {
+    // width: 75%;
+    // margin: 0 auto;
+ 
+    &__h2 {
+       font-family: "Raleway";
+       font-weight: 300;
+       font-size: 1.8rem;
+       margin: 0 auto;
+       text-align: center;
+       padding: 1rem;
+    }
+ 
+    &__first {
+       text-align: center;
+       // margin: 3rem auto;
+       font-family: "Raleway";
+ 
+       &__img {
+          position: relative;
+          display: inline-block;
+          margin: 0 auto;
+          // width: 60%;
+          text-align: center;
+          // width: 400px;
+ 
+          &__ellipse1 {
+             // width: 50%;
+             // height: auto;
+             
+          }
+ 
+          &__person2 {
+             position: absolute;
+             // bottom: 1rem;
+             // left: 4.5rem;
+             right: -12%;
+             
+             // width: 40%;
+             // height: auto;
+ 
+          }
+       }
+ 
+       &__entries {
+          font-size: 2rem;
+          font-weight: 700;
+          text-align: center;
+          letter-spacing: 0.1rem;
+ 
+       }
+ 
+       &__dailyentries {
+          text-align: center;
+          font-weight: 400;
+          color: #A5A5A5;
+ 
+       }
+    }
+ 
+    &__where {
+       text-align: center;
+       // margin: 3rem auto;
+       font-family: "Raleway";
+ 
+       &__img {
+          position: relative;
+          display: inline-block;
+          margin: 0 auto;
+          // width: 60%;
+          // text-align: center;
+ 
+          &__ellipse2 {
+             // margin: 0 auto;
+             // width: 50%;
+             // height: auto;
+          }
+ 
+          &__eye2 {
+             position: absolute;
+             // bottom: 2rem;
+             right: -40%;
+             top: 18%;
+             // width: 40%;
+             // height: auto;
+          }
+       }
+ 
+       &__seen {
+          font-size: 2rem;
+          font-weight: 700;
+          text-align: center;
+          letter-spacing: 0.1rem;
+ 
+       }
+ 
+       &__seenproducts {
+          text-align: center;
+          font-weight: 400;
+          color: #A5A5A5;
+       }
+    }
+ 
+    &__recognition {
+       text-align: center;
+       // margin: 3rem auto;
+       font-family: "Raleway";
+ 
+       &__img {
+          text-align: center;
+          display: inline-block;
+          position: relative;
+          // width: 60%;
+          // height: auto;
+ 
+          &__ellipse3 {
+             // width: 50%;
+             // height: auto;
+          }
+ 
+          &__catalog2 {
+             position: absolute;
+             // bottom: 1rem;
+             right: -35%;
+             top: 10%;
+             // width: 40%;
+             // height: auto;
+          }
+       }
+ 
+       &__posts {
+          font-size: 2rem;
+          font-weight: 700;
+          text-align: center;
+          letter-spacing: 0.1rem;
+ 
+       }
+ 
+       &__added {
+          text-align: center;
+          font-weight: 400;
+          color: #A5A5A5;
+       }
+    }
+ }
