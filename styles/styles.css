@@ -71,6 +71,9 @@
   margin: 0 auto;
   text-align: center;
 }
+.popular__first__img__ellipse1 {
+  position: relative;
+}
 .popular__first__img__person2 {
   position: absolute;
   right: -12%;
@@ -85,16 +88,21 @@
   font-size: 1rem;
   text-align: center;
   font-weight: 400;
+  margin-top: 0.5rem;
   color: #A5A5A5;
 }
 .popular__where {
   text-align: center;
+  margin: 3rem auto;
   font-family: "Raleway";
 }
 .popular__where__img {
   position: relative;
   display: inline-block;
   margin: 0 auto;
+}
+.popular__where__img__ellipse2 {
+  position: relative;
 }
 .popular__where__img__eye2 {
   position: absolute;
@@ -108,6 +116,7 @@
   letter-spacing: 0.2rem;
 }
 .popular__where__seenproducts {
+  margin-top: 0.5rem;
   text-align: center;
   font-weight: 400;
   color: #A5A5A5;
@@ -119,6 +128,9 @@
 .popular__recognition__img {
   text-align: center;
   display: inline-block;
+  position: relative;
+}
+.popular__recognition__img__ellipse3 {
   position: relative;
 }
 .popular__recognition__img__catalog2 {
@@ -133,11 +145,45 @@
   letter-spacing: 0.2rem;
 }
 .popular__recognition__added {
+  margin: 0.5rem auto 3rem;
   text-align: center;
   font-weight: 400;
   color: #A5A5A5;
 }
 
+.advertisements {
+  background-color: #F7F7F7;
+  display: block;
+  padding-top: 3rem;
+}
+.advertisements__first {
+  background-color: white;
+  height: 20rem;
+  width: 60%;
+  margin: 5rem auto;
+  padding: 3rem;
+  margin-top: 3rem;
+}
+.advertisements__first__img {
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+}
+.advertisements__first__img__red-frame {
+  position: absolute;
+  right: 13%;
+  top: -30%;
+}
+.advertisements__first__img__macbook {
+  position: relative;
+  margin: auto;
+}
+.advertisements__first__h2 {
+  font-family: "raleway";
+}
+.advertisements__first__p {
+  font-family: "Open Sans";
+}
 * {
   box-sizing: border-box;
   margin: 0;

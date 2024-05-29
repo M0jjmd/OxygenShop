@@ -1,0 +1,69 @@
+.advertisements {
+    background-color: #F7F7F7;
+    display: block;
+    padding-top: 3rem;
+    // margin: 0 auto;
+    // text-align: center;
+    // width: 100%;
+    // height: auto;
+    // height: 100px;
+
+    &__first {
+        
+        background-color: white;
+        // display: inline-block;
+        // width: 60%;
+        // height: 1%;
+        // margin: 3rem auto;
+        height: 20rem;
+        width: 60%;
+        margin: 5rem auto;
+        padding: 3rem;
+        margin-top: 3rem;
+        // width: 60%;
+
+        &__img {
+            position: relative;
+            margin: 0 auto;
+            text-align: center;
+            
+
+            &__red-frame {
+                position: absolute;
+                right: 13%;
+                top: -30%;
+                // position: relative;
+                // z-index: -1;
+                // right: -40%;
+                // top: -30%;
+
+            }
+
+            &__macbook {
+                position: relative;
+                margin: auto;
+                
+                // position: relative;
+                // position: absolute;
+                // top: 50%;
+                // left: 50%;
+                // transform: translate(-50%, -50%);
+
+
+
+            }
+        }
+
+        &__h2 {
+            font-family: "raleway";
+        }
+
+        &__p {
+            font-family: "Open Sans";
+        }
+    }
+
+    &__second {}
+
+    &third {}
+}

@@ -25,6 +25,7 @@
             // width: 400px;
 
             &__ellipse1 {
+                position: relative;
                 // width: 50%;
                 // height: auto;
 
@@ -54,6 +55,7 @@
             font-size: 1rem;
             text-align: center;
             font-weight: 400;
+            margin-top: 0.5rem;
             color: #A5A5A5;
 
         }
@@ -61,7 +63,7 @@
 
     &__where {
         text-align: center;
-        // margin: 3rem auto;
+        margin: 3rem auto;
         font-family: "Raleway";
 
         &__img {
@@ -72,6 +74,7 @@
             // text-align: center;
 
             &__ellipse2 {
+                position: relative;
                 // margin: 0 auto;
                 // width: 50%;
                 // height: auto;
@@ -96,6 +99,7 @@
         }
 
         &__seenproducts {
+            margin-top: 0.5rem;
             text-align: center;
             font-weight: 400;
             color: #A5A5A5;
@@ -115,6 +119,7 @@
             // height: auto;
 
             &__ellipse3 {
+                position: relative;
                 // width: 50%;
                 // height: auto;
             }
@@ -138,6 +143,7 @@
         }
 
         &__added {
+            margin: 0.5rem auto 3rem;
             text-align: center;
             font-weight: 400;
             color: #A5A5A5;
