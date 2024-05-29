@@ -62,10 +62,6 @@ body {
   width: 100%;
 }
 
-.popular {
-  width: 75%;
-  margin: 0 auto;
-}
 .popular__h2 {
   font-family: "Raleway";
   font-weight: 300;
@@ -75,24 +71,18 @@ body {
   padding: 1rem;
 }
 .popular__first {
+  text-align: center;
   font-family: "Raleway";
 }
 .popular__first__img {
   position: relative;
+  display: inline-block;
   margin: 0 auto;
-  width: 60%;
   text-align: center;
-}
-.popular__first__img__ellipse1 {
-  width: 50%;
-  height: auto;
 }
 .popular__first__img__person2 {
   position: absolute;
-  bottom: 1rem;
-  left: 4.5rem;
-  width: 40%;
-  height: auto;
+  right: -12%;
 }
 .popular__first__entries {
   font-size: 2rem;
@@ -103,26 +93,21 @@ body {
 .popular__first__dailyentries {
   text-align: center;
   font-weight: 400;
+  color: #A5A5A5;
 }
 .popular__where {
+  text-align: center;
   font-family: "Raleway";
 }
 .popular__where__img {
-  margin: 0 auto;
   position: relative;
-  width: 60%;
-  text-align: center;
-}
-.popular__where__img__ellipse2 {
-  width: 50%;
-  height: auto;
+  display: inline-block;
+  margin: 0 auto;
 }
 .popular__where__img__eye2 {
   position: absolute;
-  bottom: 2rem;
-  left: 6rem;
-  width: 40%;
-  height: auto;
+  right: -40%;
+  top: 18%;
 }
 .popular__where__seen {
   font-size: 2rem;
@@ -133,27 +118,21 @@ body {
 .popular__where__seenproducts {
   text-align: center;
   font-weight: 400;
+  color: #A5A5A5;
 }
 .popular__recognition {
+  text-align: center;
   font-family: "Raleway";
 }
 .popular__recognition__img {
   text-align: center;
-  margin: 0 auto;
+  display: inline-block;
   position: relative;
-  width: 60%;
-  height: auto;
-}
-.popular__recognition__img__ellipse3 {
-  width: 50%;
-  height: auto;
 }
 .popular__recognition__img__catalog2 {
   position: absolute;
-  bottom: 1rem;
-  left: 6rem;
-  width: 40%;
-  height: auto;
+  right: -35%;
+  top: 10%;
 }
 .popular__recognition__posts {
   font-size: 2rem;
@@ -163,7 +142,8 @@ body {
 }
 .popular__recognition__added {
   text-align: center;
-  font-weight: 300;
+  font-weight: 400;
+  color: #A5A5A5;
 }
 
 .questions {

@@ -71,8 +71,8 @@ body {
 }
 
 .popular {
-   width: 75%;
-   margin: 0 auto;
+   // width: 75%;
+   // margin: 0 auto;
 
    &__h2 {
       font-family: "Raleway";
@@ -84,28 +84,33 @@ body {
    }
 
    &__first {
-      // text-align: center;
+      text-align: center;
       // margin: 3rem auto;
       font-family: "Raleway";
 
       &__img {
-         
          position: relative;
+         display: inline-block;
          margin: 0 auto;
-         width: 60%;
+         // width: 60%;
          text-align: center;
+         // width: 400px;
 
          &__ellipse1 {
-            width: 50%;
-            height: auto;
+            // width: 50%;
+            // height: auto;
+            
          }
 
          &__person2 {
             position: absolute;
-            bottom: 1rem;
-            left: 4.5rem;
-            width: 40%;
-            height: auto;
+            // bottom: 1rem;
+            // left: 4.5rem;
+            right: -12%;
+            
+            // width: 40%;
+            // height: auto;
+
          }
       }
 
@@ -120,31 +125,36 @@ body {
       &__dailyentries {
          text-align: center;
          font-weight: 400;
+         color: #A5A5A5;
+
       }
    }
 
    &__where {
-      // text-align: center;
+      text-align: center;
       // margin: 3rem auto;
       font-family: "Raleway";
 
       &__img {
-         margin: 0 auto;
          position: relative;
-         width: 60%;
-         text-align: center;
+         display: inline-block;
+         margin: 0 auto;
+         // width: 60%;
+         // text-align: center;
 
          &__ellipse2 {
-            width: 50%;
-            height: auto;
+            // margin: 0 auto;
+            // width: 50%;
+            // height: auto;
          }
 
          &__eye2 {
             position: absolute;
-            bottom: 2rem;
-            left: 6rem;
-            width: 40%;
-            height: auto;
+            // bottom: 2rem;
+            right: -40%;
+            top: 18%;
+            // width: 40%;
+            // height: auto;
          }
       }
 
@@ -159,32 +169,34 @@ body {
       &__seenproducts {
          text-align: center;
          font-weight: 400;
+         color: #A5A5A5;
       }
    }
 
    &__recognition {
-      // text-align: center;
+      text-align: center;
       // margin: 3rem auto;
       font-family: "Raleway";
 
       &__img {
          text-align: center;
-         margin: 0 auto;
+         display: inline-block;
          position: relative;
-         width: 60%;
-         height: auto;
+         // width: 60%;
+         // height: auto;
 
          &__ellipse3 {
-            width: 50%;
-            height: auto;
+            // width: 50%;
+            // height: auto;
          }
 
          &__catalog2 {
             position: absolute;
-            bottom: 1rem;
-            left: 6rem;
-            width: 40%;
-            height: auto;
+            // bottom: 1rem;
+            right: -35%;
+            top: 10%;
+            // width: 40%;
+            // height: auto;
          }
       }
 
@@ -198,7 +210,8 @@ body {
 
       &__added {
          text-align: center;
-         font-weight: 300;
+         font-weight: 400;
+         color: #A5A5A5;
       }
    }
 }
