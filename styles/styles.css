@@ -283,6 +283,42 @@
   margin: auto;
 }
 
+.prices {
+  text-align: center;
+}
+.prices__basic {
+  display: inline-block;
+  position: relative;
+  width: 80%;
+  border: 1px solid red;
+  height: 15%;
+  border-radius: 5px;
+}
+.prices__basic__price {
+  display: inline-block;
+  width: 40%;
+  vertical-align: top;
+  padding-top: 4rem;
+}
+.prices__basic__price__h3 {
+  font-family: "Raleway";
+  margin-bottom: 0.5rem;
+}
+.prices__basic__price__h4 {
+  font-family: "Open Sans";
+  font-weight: 300;
+  font-size: 2rem;
+}
+.prices__basic__benefits {
+  display: inline-block;
+  position: relative;
+  width: 40%;
+  height: auto;
+}
+.prices__basic__benefits__item {
+  margin: 1rem;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;

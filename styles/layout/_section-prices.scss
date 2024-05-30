@@ -1,0 +1,50 @@
+.prices {
+    text-align: center;
+
+    &__basic {
+        display: inline-block;
+        position: relative;
+        width: 80%;
+        border: 1px solid red;
+        height: 15%;
+        border-radius: 5px;;
+        // height: 300px;
+        
+        &__price {
+            display: inline-block;
+            // position: relative;
+            // top: -30%;
+            width: 40%;
+            vertical-align: top;
+            padding-top: 4rem;
+            // height: 7rem;
+            // height: 100px;
+            // place-items: center;
+            // padding-bottom: 10rem;
+
+            &__h3 {
+                font-family: "Raleway";
+                margin-bottom: 0.5rem;
+            }
+
+            &__h4 {
+                font-family: "Open Sans";
+                font-weight: 300;
+                font-size: 2rem;
+            }
+            
+        }
+
+        &__benefits {
+            display: inline-block;
+            position: relative;
+            // padding-top: 1rem;
+            width: 40%;
+            height: auto;
+
+            &__item {
+                margin: 1rem;
+            }
+        }
+    }
+}
