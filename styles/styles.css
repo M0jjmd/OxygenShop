@@ -152,7 +152,7 @@
 }
 
 .advertisements {
-  background-color: #A5A5A5;
+  background-color: #F7F7F7;
   padding-top: 2rem;
   padding-bottom: 2rem;
   width: 100%;
@@ -162,8 +162,9 @@
   margin: 0 auto;
   width: 80%;
   text-align: center;
-  padding-top: 2rem;
-  font-family: "Raleway";
+  padding: 2rem 0;
+  border-radius: 5px;
+  border: 0.1rem solid #E8E9ED;
 }
 .advertisements__first__img {
   position: relative;
@@ -179,18 +180,107 @@
   right: -10%;
   top: -30%;
 }
-.advertisements__first__entries {
-  font-size: 1.5rem;
-  font-weight: 800;
+.advertisements__first__h2 {
+  font-family: "Raleway";
+  font-size: 2rem;
+  font-weight: 400;
   text-align: center;
-  letter-spacing: 0.2rem;
+  text-align: left;
+  padding: 1.5rem 1rem;
 }
-.advertisements__first__dailyentries {
+.advertisements__first__p {
+  font-family: "Open Sans";
   font-size: 1rem;
   text-align: center;
   font-weight: 400;
   margin-top: 0.5rem;
-  color: #A5A5A5;
+  text-align: left;
+  padding: 0 1rem;
+}
+.advertisements__second {
+  background-color: white;
+  margin: 1.5rem auto;
+  width: 80%;
+  text-align: center;
+  padding: 2rem 0;
+  border-radius: 5px;
+  border: 0.1rem solid #E8E9ED;
+}
+.advertisements__second__img {
+  position: relative;
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
+}
+.advertisements__second__img__ellipse4 {
+  position: relative;
+}
+.advertisements__second__img__iPhone {
+  position: absolute;
+  right: -35%;
+  top: 5%;
+}
+.advertisements__second__h2 {
+  font-family: "Raleway";
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: center;
+  text-align: left;
+  padding-left: 1rem;
+}
+.advertisements__second__p {
+  font-family: "Open Sans";
+  font-size: 1rem;
+  text-align: center;
+  font-weight: 400;
+  margin-top: 0.5rem;
+  text-align: left;
+  padding: 0 1rem;
+}
+.advertisements__third {
+  background-color: white;
+  margin: 1.5rem auto;
+  width: 80%;
+  text-align: center;
+  padding-top: 2rem;
+  border-radius: 5px;
+  border: 0.1rem solid #E8E9ED;
+}
+.advertisements__third__h2 {
+  font-family: "Raleway";
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: center;
+  text-align: left;
+  padding-left: 1rem;
+}
+.advertisements__third__p {
+  font-family: "Open Sans";
+  font-size: 1rem;
+  text-align: center;
+  font-weight: 400;
+  margin-top: 0.5rem;
+  text-align: left;
+  padding: 0 1rem;
+}
+.advertisements__third__geen-background {
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  height: 15em;
+  background-color: #55DFB4;
+  border-radius: 5px;
+}
+.advertisements__third__geen-background__orange-trumpet {
+  height: 100%;
+  padding-top: 4em;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
 }
 
 * {
