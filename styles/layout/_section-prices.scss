@@ -5,7 +5,7 @@
         display: inline-block;
         position: relative;
         width: 80%;
-        border: 1px solid red;
+        border: 1px solid #FB3B64;
         height: 15%;
         border-radius: 5px;;
         // height: 300px;
@@ -46,5 +46,143 @@
                 margin: 1rem;
             }
         }
+
+        &__btn__button {
+            font-family: "Open Sans";
+            background-color: #FB3B64;
+            color: white;
+            font-weight: bold;
+            width: 40%;
+            height: 3.7rem;
+            border-radius: 30px;
+            outline: none;
+            border: none;
+            display: absolute;
+            bottom: 10px;
+        }
     }
+
+    &__professional {
+        display: inline-block;
+        position: relative;
+        width: 80%;
+        border: 1px solid #07ACE6;
+        height: 15%;
+        border-radius: 5px;;
+        margin: 5rem 0;
+        // height: 300px;
+        
+        &__price {
+            display: inline-block;
+            // position: relative;
+            // top: -30%;
+            width: 40%;
+            vertical-align: top;
+            padding-top: 4rem;
+            // height: 7rem;
+            // height: 100px;
+            // place-items: center;
+            // padding-bottom: 10rem;
+
+            &__h3 {
+                font-family: "Raleway";
+                margin-bottom: 0.5rem;
+            }
+
+            &__h4 {
+                font-family: "Open Sans";
+                font-weight: 300;
+                font-size: 2rem;
+            }
+            
+        }
+
+        &__benefits {
+            display: inline-block;
+            position: relative;
+            // padding-top: 1rem;
+            width: 40%;
+            height: auto;
+
+            &__item {
+                margin: 1rem;
+            }
+        }
+
+        &__btn__button {
+            font-family: "Open Sans";
+            background-color: #07ACE6;
+            color: white;
+            font-weight: bold;
+            width: 40%;
+            height: 3.7rem;
+            border-radius: 30px;
+            outline: none;
+            border: none;
+            display: absolute;
+            bottom: 10px;
+        }
+    }
+
+    &__premium {
+        display: inline-block;
+        position: relative;
+        width: 80%;
+        border: 1px solid #55DFB4;
+        height: 15%;
+        border-radius: 5px;;
+        // height: 300px;
+        
+        &__price {
+            display: inline-block;
+            // position: relative;
+            // top: -30%;
+            width: 40%;
+            vertical-align: top;
+            padding-top: 4rem;
+            // height: 7rem;
+            // height: 100px;
+            // place-items: center;
+            // padding-bottom: 10rem;
+
+            &__h3 {
+                font-family: "Raleway";
+                margin-bottom: 0.5rem;
+            }
+
+            &__h4 {
+                font-family: "Open Sans";
+                font-weight: 300;
+                font-size: 2rem;
+            }
+            
+        }
+
+        &__benefits {
+            display: inline-block;
+            position: relative;
+            // padding-top: 1rem;
+            width: 40%;
+            height: auto;
+
+            &__item {
+                margin: 1rem;
+            }
+        }
+
+        &__btn__button {
+            font-family: "Open Sans";
+            background-color: #55DFB4;
+            color: white;
+            font-weight: bold;
+            width: 40%;
+            height: 3.7rem;
+            border-radius: 30px;
+            outline: none;
+            border: none;
+            display: absolute;
+            bottom: 10px;
+        }
+    }
+
 }

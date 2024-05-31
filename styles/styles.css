@@ -290,7 +290,7 @@
   display: inline-block;
   position: relative;
   width: 80%;
-  border: 1px solid red;
+  border: 1px solid #FB3B64;
   height: 15%;
   border-radius: 5px;
 }
@@ -317,6 +317,110 @@
 }
 .prices__basic__benefits__item {
   margin: 1rem;
+}
+.prices__basic__btn__button {
+  font-family: "Open Sans";
+  background-color: #FB3B64;
+  color: white;
+  font-weight: bold;
+  width: 40%;
+  height: 3.7rem;
+  border-radius: 30px;
+  outline: none;
+  border: none;
+  display: absolute;
+  bottom: 10px;
+}
+.prices__professional {
+  display: inline-block;
+  position: relative;
+  width: 80%;
+  border: 1px solid #07ACE6;
+  height: 15%;
+  border-radius: 5px;
+  margin: 5rem 0;
+}
+.prices__professional__price {
+  display: inline-block;
+  width: 40%;
+  vertical-align: top;
+  padding-top: 4rem;
+}
+.prices__professional__price__h3 {
+  font-family: "Raleway";
+  margin-bottom: 0.5rem;
+}
+.prices__professional__price__h4 {
+  font-family: "Open Sans";
+  font-weight: 300;
+  font-size: 2rem;
+}
+.prices__professional__benefits {
+  display: inline-block;
+  position: relative;
+  width: 40%;
+  height: auto;
+}
+.prices__professional__benefits__item {
+  margin: 1rem;
+}
+.prices__professional__btn__button {
+  font-family: "Open Sans";
+  background-color: #07ACE6;
+  color: white;
+  font-weight: bold;
+  width: 40%;
+  height: 3.7rem;
+  border-radius: 30px;
+  outline: none;
+  border: none;
+  display: absolute;
+  bottom: 10px;
+}
+.prices__premium {
+  display: inline-block;
+  position: relative;
+  width: 80%;
+  border: 1px solid #55DFB4;
+  height: 15%;
+  border-radius: 5px;
+}
+.prices__premium__price {
+  display: inline-block;
+  width: 40%;
+  vertical-align: top;
+  padding-top: 4rem;
+}
+.prices__premium__price__h3 {
+  font-family: "Raleway";
+  margin-bottom: 0.5rem;
+}
+.prices__premium__price__h4 {
+  font-family: "Open Sans";
+  font-weight: 300;
+  font-size: 2rem;
+}
+.prices__premium__benefits {
+  display: inline-block;
+  position: relative;
+  width: 40%;
+  height: auto;
+}
+.prices__premium__benefits__item {
+  margin: 1rem;
+}
+.prices__premium__btn__button {
+  font-family: "Open Sans";
+  background-color: #55DFB4;
+  color: white;
+  font-weight: bold;
+  width: 40%;
+  height: 3.7rem;
+  border-radius: 30px;
+  outline: none;
+  border: none;
+  display: absolute;
+  bottom: 10px;
 }
 
 * {
