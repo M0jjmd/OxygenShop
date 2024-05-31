@@ -1,0 +1,18 @@
+@mixin prices-styles {
+    display: inline-block;
+    position: relative;
+    width: 80%;
+    border-radius: 20px;
+}
+
+@mixin prices-buttons {
+    font-family: "Open Sans";
+    color: white;
+    font-weight: bold;
+    padding: 1rem 3.5rem;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    display: absolute;
+    transform: translate(0, 50%);
+}

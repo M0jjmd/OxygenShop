@@ -1,36 +1,35 @@
+@import 'mixins';
 .prices {
     text-align: center;
 
+    &__title {
+        font-family: "Raleway";
+        margin-top: 2.5rem;
+        margin-bottom: 1rem;
+        font-size: 2.5rem;
+        font-weight: 400;
+    }
+
     &__basic {
-        display: inline-block;
-        position: relative;
-        width: 80%;
+        @include prices-styles;
         border: 1px solid #FB3B64;
-        height: 15%;
-        border-radius: 5px;;
-        // height: 300px;
         
         &__price {
             display: inline-block;
-            // position: relative;
-            // top: -30%;
             width: 40%;
-            vertical-align: top;
-            padding-top: 4rem;
-            // height: 7rem;
-            // height: 100px;
-            // place-items: center;
-            // padding-bottom: 10rem;
+            // vertical-align: top;
+            transform: translate(0, -40%);
 
             &__h3 {
                 font-family: "Raleway";
-                margin-bottom: 0.5rem;
+                // margin-bottom: 0.5rem;
             }
 
             &__h4 {
                 font-family: "Open Sans";
+                color: #FB3B64;
                 font-weight: 300;
-                font-size: 2rem;
+                font-size: 2.5rem;
             }
             
         }
@@ -38,51 +37,153 @@
         &__benefits {
             display: inline-block;
             position: relative;
-            // padding-top: 1rem;
-            width: 40%;
-            height: auto;
+            width: 45%;
+            list-style-type: none;
+            padding-top: 1rem;
+            text-align: left;
+            margin-top: 1rem;
+            // transform: translate(-50%, 50%);
 
-            &__item {
-                margin: 1rem;
+            &__li {
+                font-family: "Open Sans";
+                font-weight: 400;
+                font-size: 0.9rem;
+                padding: 0.2rem;
             }
         }
 
-        &__btn__button {
-            font-family: "Open Sans";
+        &__button {
+            @include prices-buttons;
             background-color: #FB3B64;
-            color: white;
-            font-weight: bold;
-            width: 40%;
-            height: 3.7rem;
-            border-radius: 30px;
-            outline: none;
-            border: none;
-            display: absolute;
-            bottom: 10px;
         }
     }
 
     &__professional {
-        display: inline-block;
-        position: relative;
-        width: 80%;
+        @include prices-styles;
         border: 1px solid #07ACE6;
-        height: 15%;
-        border-radius: 5px;;
-        margin: 5rem 0;
-        // height: 300px;
+        margin: 2rem 0;
         
         &__price {
             display: inline-block;
-            // position: relative;
-            // top: -30%;
+            width: 40%;
+            // vertical-align: top;
+            transform: translate(0, -40%);
+
+            &__h3 {
+                font-family: "Raleway";
+                // margin-bottom: 0.5rem;
+            }
+
+            &__h4 {
+                font-family: "Open Sans";
+                color: #FB3B64;
+                font-weight: 300;
+                font-size: 2.5rem;
+            }
+            
+        }
+
+        &__benefits {
+            display: inline-block;
+            position: relative;
+            width: 45%;
+            list-style-type: none;
+            padding-top: 1rem;
+            text-align: left;
+            margin-top: 1rem;
+            // transform: translate(-50%, 50%);
+
+            &__li {
+                font-family: "Open Sans";
+                font-weight: 400;
+                font-size: 0.9rem;
+                padding: 0.2rem;
+            }
+        }
+
+        &__button {
+            font-family: "Open Sans";
+            background-color: #FB3B64;
+            color: white;
+            font-weight: bold;
+            padding: 1rem 3.5rem;
+            border-radius: 30px;
+            outline: none;
+            border: none;
+            display: absolute;
+            transform: translate(0, 50%);
+            // bottom: 10px;
+        }
+    }
+
+    &__premium {
+        @include prices-styles;
+        border: 1px solid #55DFB4;
+        
+        &__price {
+            display: inline-block;
+            width: 40%;
+            // vertical-align: top;
+            transform: translate(0, -40%);
+
+            &__h3 {
+                font-family: "Raleway";
+                // margin-bottom: 0.5rem;
+            }
+
+            &__h4 {
+                font-family: "Open Sans";
+                color: #FB3B64;
+                font-weight: 300;
+                font-size: 2.5rem;
+            }
+            
+        }
+
+        &__benefits {
+            display: inline-block;
+            position: relative;
+            width: 45%;
+            list-style-type: none;
+            padding-top: 1rem;
+            text-align: left;
+            margin-top: 1rem;
+            // transform: translate(-50%, 50%);
+
+            &__li {
+                font-family: "Open Sans";
+                font-weight: 400;
+                font-size: 0.9rem;
+                padding: 0.2rem;
+            }
+        }
+
+        &__button {
+            font-family: "Open Sans";
+            background-color: #FB3B64;
+            color: white;
+            font-weight: bold;
+            padding: 1rem 3.5rem;
+            border-radius: 30px;
+            outline: none;
+            border: none;
+            display: absolute;
+            transform: translate(0, 50%);
+            // bottom: 10px;
+        }
+    }
+
+    ////////////////
+
+    &__professional {
+        @include prices-styles;
+        border: 1px solid #07ACE6;
+        
+        &__price {
+            display: inline-block;
             width: 40%;
             vertical-align: top;
             padding-top: 4rem;
-            // height: 7rem;
-            // height: 100px;
-            // place-items: center;
-            // padding-bottom: 10rem;
 
             &__h3 {
                 font-family: "Raleway";
@@ -100,9 +201,10 @@
         &__benefits {
             display: inline-block;
             position: relative;
-            // padding-top: 1rem;
             width: 40%;
-            height: auto;
+            // height: auto;
+            list-style-type: none;
+
 
             &__item {
                 margin: 1rem;
@@ -125,25 +227,14 @@
     }
 
     &__premium {
-        display: inline-block;
-        position: relative;
-        width: 80%;
+        @include prices-styles;
         border: 1px solid #55DFB4;
-        height: 15%;
-        border-radius: 5px;;
-        // height: 300px;
         
         &__price {
             display: inline-block;
-            // position: relative;
-            // top: -30%;
             width: 40%;
-            vertical-align: top;
-            padding-top: 4rem;
-            // height: 7rem;
-            // height: 100px;
-            // place-items: center;
-            // padding-bottom: 10rem;
+            // vertical-align: top;
+            // padding-top: 4rem;
 
             &__h3 {
                 font-family: "Raleway";
@@ -161,9 +252,10 @@
         &__benefits {
             display: inline-block;
             position: relative;
-            // padding-top: 1rem;
             width: 40%;
-            height: auto;
+            // height: auto;
+            list-style-type: none;
+
 
             &__item {
                 margin: 1rem;
@@ -184,5 +276,4 @@
             bottom: 10px;
         }
     }
-
 }

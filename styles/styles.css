@@ -286,59 +286,164 @@
 .prices {
   text-align: center;
 }
+.prices__title {
+  font-family: "Raleway";
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  font-weight: 400;
+}
 .prices__basic {
   display: inline-block;
   position: relative;
   width: 80%;
+  border-radius: 20px;
   border: 1px solid #FB3B64;
-  height: 15%;
-  border-radius: 5px;
 }
 .prices__basic__price {
   display: inline-block;
   width: 40%;
-  vertical-align: top;
-  padding-top: 4rem;
+  transform: translate(0, -40%);
 }
 .prices__basic__price__h3 {
   font-family: "Raleway";
-  margin-bottom: 0.5rem;
 }
 .prices__basic__price__h4 {
   font-family: "Open Sans";
+  color: #FB3B64;
   font-weight: 300;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 .prices__basic__benefits {
   display: inline-block;
   position: relative;
-  width: 40%;
-  height: auto;
+  width: 45%;
+  list-style-type: none;
+  padding-top: 1rem;
+  text-align: left;
+  margin-top: 1rem;
 }
-.prices__basic__benefits__item {
-  margin: 1rem;
-}
-.prices__basic__btn__button {
+.prices__basic__benefits__li {
   font-family: "Open Sans";
-  background-color: #FB3B64;
+  font-weight: 400;
+  font-size: 0.9rem;
+  padding: 0.2rem;
+}
+.prices__basic__button {
+  font-family: "Open Sans";
   color: white;
   font-weight: bold;
-  width: 40%;
-  height: 3.7rem;
+  padding: 1rem 3.5rem;
   border-radius: 30px;
   outline: none;
   border: none;
   display: absolute;
-  bottom: 10px;
+  transform: translate(0, 50%);
+  background-color: #FB3B64;
 }
 .prices__professional {
   display: inline-block;
   position: relative;
   width: 80%;
+  border-radius: 20px;
   border: 1px solid #07ACE6;
-  height: 15%;
-  border-radius: 5px;
-  margin: 5rem 0;
+  margin: 2rem 0;
+}
+.prices__professional__price {
+  display: inline-block;
+  width: 40%;
+  transform: translate(0, -40%);
+}
+.prices__professional__price__h3 {
+  font-family: "Raleway";
+}
+.prices__professional__price__h4 {
+  font-family: "Open Sans";
+  color: #FB3B64;
+  font-weight: 300;
+  font-size: 2.5rem;
+}
+.prices__professional__benefits {
+  display: inline-block;
+  position: relative;
+  width: 45%;
+  list-style-type: none;
+  padding-top: 1rem;
+  text-align: left;
+  margin-top: 1rem;
+}
+.prices__professional__benefits__li {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 0.9rem;
+  padding: 0.2rem;
+}
+.prices__professional__button {
+  font-family: "Open Sans";
+  background-color: #FB3B64;
+  color: white;
+  font-weight: bold;
+  padding: 1rem 3.5rem;
+  border-radius: 30px;
+  outline: none;
+  border: none;
+  display: absolute;
+  transform: translate(0, 50%);
+}
+.prices__premium {
+  display: inline-block;
+  position: relative;
+  width: 80%;
+  border-radius: 20px;
+  border: 1px solid #55DFB4;
+}
+.prices__premium__price {
+  display: inline-block;
+  width: 40%;
+  transform: translate(0, -40%);
+}
+.prices__premium__price__h3 {
+  font-family: "Raleway";
+}
+.prices__premium__price__h4 {
+  font-family: "Open Sans";
+  color: #FB3B64;
+  font-weight: 300;
+  font-size: 2.5rem;
+}
+.prices__premium__benefits {
+  display: inline-block;
+  position: relative;
+  width: 45%;
+  list-style-type: none;
+  padding-top: 1rem;
+  text-align: left;
+  margin-top: 1rem;
+}
+.prices__premium__benefits__li {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 0.9rem;
+  padding: 0.2rem;
+}
+.prices__premium__button {
+  font-family: "Open Sans";
+  background-color: #FB3B64;
+  color: white;
+  font-weight: bold;
+  padding: 1rem 3.5rem;
+  border-radius: 30px;
+  outline: none;
+  border: none;
+  display: absolute;
+  transform: translate(0, 50%);
+}
+.prices__professional {
+  display: inline-block;
+  position: relative;
+  width: 80%;
+  border-radius: 20px;
+  border: 1px solid #07ACE6;
 }
 .prices__professional__price {
   display: inline-block;
@@ -359,7 +464,7 @@
   display: inline-block;
   position: relative;
   width: 40%;
-  height: auto;
+  list-style-type: none;
 }
 .prices__professional__benefits__item {
   margin: 1rem;
@@ -381,15 +486,12 @@
   display: inline-block;
   position: relative;
   width: 80%;
+  border-radius: 20px;
   border: 1px solid #55DFB4;
-  height: 15%;
-  border-radius: 5px;
 }
 .prices__premium__price {
   display: inline-block;
   width: 40%;
-  vertical-align: top;
-  padding-top: 4rem;
 }
 .prices__premium__price__h3 {
   font-family: "Raleway";
@@ -404,7 +506,7 @@
   display: inline-block;
   position: relative;
   width: 40%;
-  height: auto;
+  list-style-type: none;
 }
 .prices__premium__benefits__item {
   margin: 1rem;
