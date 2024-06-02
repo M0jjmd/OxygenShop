@@ -16,3 +16,12 @@
     display: absolute;
     transform: translate(0, 50%);
 }
+
+@mixin benefits-style {
+    display: inline-block;
+    position: relative;
+    width: 45%;
+    list-style-type: none;
+    text-align: left;
+    margin-top: 0.5rem;
+}

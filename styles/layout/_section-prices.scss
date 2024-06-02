@@ -35,20 +35,13 @@
         }
 
         &__benefits {
-            display: inline-block;
-            position: relative;
-            width: 45%;
-            list-style-type: none;
-            padding-top: 1rem;
-            text-align: left;
-            margin-top: 1rem;
-            // transform: translate(-50%, 50%);
+            @include benefits-style;
 
             &__li {
                 font-family: "Open Sans";
                 font-weight: 400;
                 font-size: 0.9rem;
-                padding: 0.2rem;
+                margin: 0.6rem;
             }
         }
 
@@ -84,35 +77,19 @@
         }
 
         &__benefits {
-            display: inline-block;
-            position: relative;
-            width: 45%;
-            list-style-type: none;
-            padding-top: 1rem;
-            text-align: left;
-            margin-top: 1rem;
-            // transform: translate(-50%, 50%);
+            @include benefits-style;
 
             &__li {
                 font-family: "Open Sans";
                 font-weight: 400;
                 font-size: 0.9rem;
-                padding: 0.2rem;
+                margin: 0.6rem;
             }
         }
 
         &__button {
-            font-family: "Open Sans";
-            background-color: #FB3B64;
-            color: white;
-            font-weight: bold;
-            padding: 1rem 3.5rem;
-            border-radius: 30px;
-            outline: none;
-            border: none;
-            display: absolute;
-            transform: translate(0, 50%);
-            // bottom: 10px;
+            @include prices-buttons;
+            background-color: #07ACE6;
         }
     }
 
@@ -141,14 +118,7 @@
         }
 
         &__benefits {
-            display: inline-block;
-            position: relative;
-            width: 45%;
-            list-style-type: none;
-            padding-top: 1rem;
-            text-align: left;
-            margin-top: 1rem;
-            // transform: translate(-50%, 50%);
+            @include benefits-style;
 
             &__li {
                 font-family: "Open Sans";
@@ -159,121 +129,113 @@
         }
 
         &__button {
-            font-family: "Open Sans";
-            background-color: #FB3B64;
-            color: white;
-            font-weight: bold;
-            padding: 1rem 3.5rem;
-            border-radius: 30px;
-            outline: none;
-            border: none;
-            display: absolute;
-            transform: translate(0, 50%);
-            // bottom: 10px;
+            @include prices-buttons;
+            background-color: #55DFB4;
+
         }
     }
 
     ////////////////
 
-    &__professional {
-        @include prices-styles;
-        border: 1px solid #07ACE6;
+    // &__professional {
+    //     @include prices-styles;
+    //     border: 1px solid #07ACE6;
         
-        &__price {
-            display: inline-block;
-            width: 40%;
-            vertical-align: top;
-            padding-top: 4rem;
+    //     &__price {
+    //         display: inline-block;
+    //         width: 40%;
+    //         vertical-align: top;
+    //         padding-top: 4rem;
 
-            &__h3 {
-                font-family: "Raleway";
-                margin-bottom: 0.5rem;
-            }
+    //         &__h3 {
+    //             font-family: "Raleway";
+    //             margin-bottom: 0.5rem;
+    //         }
 
-            &__h4 {
-                font-family: "Open Sans";
-                font-weight: 300;
-                font-size: 2rem;
-            }
+    //         &__h4 {
+    //             font-family: "Open Sans";
+    //             font-weight: 300;
+    //             font-size: 2rem;
+    //         }
             
-        }
+    //     }
 
-        &__benefits {
-            display: inline-block;
-            position: relative;
-            width: 40%;
-            // height: auto;
-            list-style-type: none;
+    //     &__benefits {
+    //         display: inline-block;
+    //         position: relative;
+    //         width: 40%;
+    //         // height: auto;
+    //         list-style-type: none;
 
 
-            &__item {
-                margin: 1rem;
-            }
-        }
+    //         &__item {
+    //             margin: 1rem;
+    //         }
+    //     }
 
-        &__btn__button {
-            font-family: "Open Sans";
-            background-color: #07ACE6;
-            color: white;
-            font-weight: bold;
-            width: 40%;
-            height: 3.7rem;
-            border-radius: 30px;
-            outline: none;
-            border: none;
-            display: absolute;
-            bottom: 10px;
-        }
-    }
+    //     &__btn__button {
+    //         font-family: "Open Sans";
+    //         background-color: #07ACE6;
+    //         color: white;
+    //         font-weight: bold;
+    //         width: 40%;
+    //         height: 3.7rem;
+    //         border-radius: 30px;
+    //         outline: none;
+    //         border: none;
+    //         display: absolute;
+    //         bottom: 10px;
+    //     }
+    // }
 
-    &__premium {
-        @include prices-styles;
-        border: 1px solid #55DFB4;
+    // &__premium {
+    //     @include prices-styles;
+    //     border: 1px solid #55DFB4;
         
-        &__price {
-            display: inline-block;
-            width: 40%;
-            // vertical-align: top;
-            // padding-top: 4rem;
+    //     &__price {
+    //         display: inline-block;
+    //         width: 40%;
+    //         // vertical-align: top;
+    //         // padding-top: 4rem;
 
-            &__h3 {
-                font-family: "Raleway";
-                margin-bottom: 0.5rem;
-            }
+    //         &__h3 {
+    //             font-family: "Raleway";
+    //             margin-bottom: 0.5rem;
+    //         }
 
-            &__h4 {
-                font-family: "Open Sans";
-                font-weight: 300;
-                font-size: 2rem;
-            }
+    //         &__h4 {
+    //             font-family: "Open Sans";
+    //             font-weight: 300;
+    //             font-size: 2rem;
+    //         }
             
-        }
+    //     }
 
-        &__benefits {
-            display: inline-block;
-            position: relative;
-            width: 40%;
-            // height: auto;
-            list-style-type: none;
+    //     &__benefits {
+    //         display: inline-block;
+    //         position: relative;
+    //         width: 40%;
+    //         // height: auto;
+    //         list-style-type: none;
 
 
-            &__item {
-                margin: 1rem;
-            }
-        }
+    //         &__item {
+    //             margin: 1rem;
+    //         }
+    //     }
 
-        &__btn__button {
-            font-family: "Open Sans";
-            background-color: #55DFB4;
-            color: white;
-            font-weight: bold;
-            width: 40%;
-            height: 3.7rem;
-            border-radius: 30px;
-            outline: none;
-            border: none;
-            display: absolute;
-            bottom: 10px;
-        }
-    }
+    //     &__btn__button {
+    //         font-family: "Open Sans";
+    //         background-color: #55DFB4;
+    //         color: white;
+    //         font-weight: bold;
+    //         width: 40%;
+    //         height: 3.7rem;
+    //         border-radius: 30px;
+    //         outline: none;
+    //         border: none;
+    //         display: absolute;
+    //         bottom: 10px;
+    //     }
+    // }
 }
