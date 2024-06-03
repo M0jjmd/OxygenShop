@@ -185,117 +185,69 @@
 
 .advertisements {
   background-color: #F7F7F7;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   width: 100%;
 }
-.advertisements__first {
+.advertisements__card {
   background-color: white;
   margin: 0 auto;
   width: 80%;
   text-align: center;
-  padding: 2rem 0;
+  padding-top: 2rem;
+  margin: 2rem auto;
   border-radius: 5px;
   border: 0.1rem solid #E8E9ED;
 }
-.advertisements__first__img {
+.advertisements__card__p {
+  font-family: "Open Sans";
+  font-size: 1rem;
+  text-align: center;
+  font-weight: 400;
+  margin-top: 0.5rem;
+  text-align: left;
+  padding: 0 1rem;
+  padding-bottom: 1.4rem;
+}
+.advertisements__card__h2 {
+  font-family: "Raleway";
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: center;
+  text-align: left;
+  padding: 1rem 1rem;
+}
+.advertisements__card__third__h2 {
+  font-family: "Raleway";
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: center;
+  text-align: left;
+  padding: 0rem 1rem 1rem;
+}
+.advertisements__card__img {
   position: relative;
   display: inline-block;
   margin: 0 auto;
   text-align: center;
 }
-.advertisements__first__img__macbook {
+.advertisements__card__img__macbook {
   position: relative;
 }
-.advertisements__first__img__red-frame {
+.advertisements__card__img__red-frame {
   position: absolute;
   right: -10%;
   top: -30%;
 }
-.advertisements__first__h2 {
-  font-family: "Raleway";
-  font-size: 2rem;
-  font-weight: 400;
-  text-align: center;
-  text-align: left;
-  padding: 1.5rem 1rem;
-}
-.advertisements__first__p {
-  font-family: "Open Sans";
-  font-size: 1rem;
-  text-align: center;
-  font-weight: 400;
-  margin-top: 0.5rem;
-  text-align: left;
-  padding: 0 1rem;
-}
-.advertisements__second {
-  background-color: white;
-  margin: 1.5rem auto;
-  width: 80%;
-  text-align: center;
-  padding: 2rem 0;
-  border-radius: 5px;
-  border: 0.1rem solid #E8E9ED;
-}
-.advertisements__second__img {
-  position: relative;
-  display: inline-block;
-  margin: 0 auto;
-  text-align: center;
-}
-.advertisements__second__img__ellipse4 {
+.advertisements__card__img__ellipse4 {
   position: relative;
 }
-.advertisements__second__img__iPhone {
+.advertisements__card__img__iPhone {
   position: absolute;
   right: -35%;
   top: 5%;
 }
-.advertisements__second__h2 {
-  font-family: "Raleway";
-  font-size: 2rem;
-  font-weight: 400;
-  text-align: center;
-  text-align: left;
-  padding-left: 1rem;
-}
-.advertisements__second__p {
-  font-family: "Open Sans";
-  font-size: 1rem;
-  text-align: center;
-  font-weight: 400;
-  margin-top: 0.5rem;
-  text-align: left;
-  padding: 0 1rem;
-}
-.advertisements__third {
-  background-color: white;
-  margin: 1.5rem auto;
-  width: 80%;
-  text-align: center;
-  padding-top: 2rem;
-  border-radius: 5px;
-  border: 0.1rem solid #E8E9ED;
-}
-.advertisements__third__h2 {
-  font-family: "Raleway";
-  font-size: 2rem;
-  font-weight: 400;
-  text-align: center;
-  text-align: left;
-  padding-left: 1rem;
-}
-.advertisements__third__p {
-  font-family: "Open Sans";
-  font-size: 1rem;
-  text-align: center;
-  font-weight: 400;
-  margin-top: 0.5rem;
-  text-align: left;
-  padding: 0 1rem;
-}
-.advertisements__third__geen-background {
+.advertisements__card__geen-background {
   position: relative;
   margin: 0 auto;
   text-align: center;
@@ -304,7 +256,7 @@
   background-color: #55DFB4;
   border-radius: 5px;
 }
-.advertisements__third__geen-background__orange-trumpet {
+.advertisements__card__geen-background__orange-trumpet {
   height: 100%;
   padding-top: 4em;
   position: absolute;
@@ -368,7 +320,6 @@
   border-radius: 30px;
   outline: none;
   border: none;
-  display: absolute;
   transform: translate(0, 50%);
   background-color: #FB3B64;
 }
@@ -416,7 +367,6 @@
   border-radius: 30px;
   outline: none;
   border: none;
-  display: absolute;
   transform: translate(0, 50%);
   background-color: #07ACE6;
 }
@@ -463,7 +413,6 @@
   border-radius: 30px;
   outline: none;
   border: none;
-  display: absolute;
   transform: translate(0, 50%);
   background-color: #55DFB4;
 }
@@ -538,7 +487,6 @@
   display: inline-block;
   margin: 1.3rem 0 0 1.5rem;
   overflow-x: auto;
-  max-width: calc(100% - 30px);
   font-family: "Open Sans";
   font-weight: 400;
   font-size: 0.7rem;
@@ -552,11 +500,10 @@
   border-radius: 30px;
   outline: none;
   border: none;
-  display: absolute;
   transform: translate(0, 50%);
   position: absolute;
-  top: 8rem;
-  right: 1rem;
+  top: 100%;
+  right: 0%;
   background-color: #08A6E4;
   cursor: pointer;
 }
@@ -604,15 +551,4 @@
 
 body {
   min-width: 320px;
-}
-
-.questions {
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
-}
-.questions .form-content {
-  display: inline-block;
-  display: inline-block;
-  text-align: left;
 }/*# sourceMappingURL=styles.css.map */
