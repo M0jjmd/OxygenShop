@@ -89,8 +89,8 @@
         <div class="advertisements__second">
 
             <div class="advertisements__second__img">
-                <img src="img/Ellipse4.png" alt="ellipse4" class="advertisements__second__img__ellipse4">
-                <img src="img/iPhone2.png" alt="iPhone" class="advertisements__second__img__iPhone">
+                <img src="img/Ellipse4.png" alt="ellipse4" class="advertisements__second__img__ellipse4" />
+                <img src="img/iPhone2.png" alt="iPhone" class="advertisements__second__img__iPhone" />
             </div>
 
             <h2 class="advertisements__second__h2">Your shop is where you are!</h2>
@@ -128,11 +128,11 @@
             </div>
 
             <ul class="prices__basic__benefits">
-                <li class="prices__basic__benefits__li"><img src="img/Checkbox.png">100 MB HDD</li>
-                <li class="prices__basic__benefits__li"><img src="img/Checkbox.png">1 Subdomain</li>
-                <li class="prices__basic__benefits__li"><img src="img/Checkbox.png">2 E-mails</li>
-                <li class="prices__basic__benefits__li"><img src="img/Cross.png">Two years license</li>
-                <li class="prices__basic__benefits__li"><img src="img/Cross.png">Full support</li>
+                <li class="prices__basic__benefits__li"><img src="img/Checkbox.png" />100 MB HDD</li>
+                <li class="prices__basic__benefits__li"><img src="img/Checkbox.png" />1 Subdomain</li>
+                <li class="prices__basic__benefits__li"><img src="img/Checkbox.png" />2 E-mails</li>
+                <li class="prices__basic__benefits__li"><img src="img/Cross.png" />Two years license</li>
+                <li class="prices__basic__benefits__li"><img src="img/Cross.png" />Full support</li>
             </ul>
 
             <button class="prices__basic__button">Begin</button>
@@ -148,11 +148,11 @@
             </div>
 
             <ul class="prices__professional__benefits">
-                <li class="prices__professional__benefits__li"><img src="img/Checkbox.png">500 MB HDD</li>
-                <li class="prices__professional__benefits__li"><img src="img/Checkbox.png">2 Subdomain</li>
-                <li class="prices__professional__benefits__li"><img src="img/Checkbox.png">5 E-mails</li>
-                <li class="prices__professional__benefits__li"><img src="img/Checkbox.png">one years license</li>
-                <li class="prices__professional__benefits__li"><img src="img/Cross.png">Full support</li>
+                <li class="prices__professional__benefits__li"><img src="img/Checkbox.png" />500 MB HDD</li>
+                <li class="prices__professional__benefits__li"><img src="img/Checkbox.png" />2 Subdomain</li>
+                <li class="prices__professional__benefits__li"><img src="img/Checkbox.png" />5 E-mails</li>
+                <li class="prices__professional__benefits__li"><img src="img/Checkbox.png" />one years license</li>
+                <li class="prices__professional__benefits__li"><img src="img/Cross.png" />Full support</li>
             </ul>
 
             <button class="prices__professional__button">Begin</button>
@@ -167,11 +167,11 @@
             </div>
 
             <ul class="prices__premium__benefits">
-                <li class="prices__premium__benefits__li"><img src="img/Checkbox.png">2 GB HDD</li>
-                <li class="prices__premium__benefits__li"><img src="img/Checkbox.png">5 Subdomain</li>
-                <li class="prices__premium__benefits__li"><img src="img/Checkbox.png">20 E-mails</li>
-                <li class="prices__premium__benefits__li"><img src="img/Checkbox.png">Two years license</li>
-                <li class="prices__premium__benefits__li"><img src="img/Checkbox.png">Full support</li>
+                <li class="prices__premium__benefits__li"><img src="img/Checkbox.png" />2 GB HDD</li>
+                <li class="prices__premium__benefits__li"><img src="img/Checkbox.png" />5 Subdomain</li>
+                <li class="prices__premium__benefits__li"><img src="img/Checkbox.png" />20 E-mails</li>
+                <li class="prices__premium__benefits__li"><img src="img/Checkbox.png" />Two years license</li>
+                <li class="prices__premium__benefits__li"><img src="img/Checkbox.png" />Full support</li>
             </ul>
 
             <button class="prices__premium__button">Begin</button>
@@ -180,28 +180,55 @@
 
     </section>
 
-    <section class="questions">
+    <section class="questions-form">
 
-        <h2 class="questions__h2">Any questions?</h2>
+        <h2 class="questions-form__h2">Any questions?</h2>
+        <h3 class="questions-form__h3">Leave your email address or call us!</h3>
 
-        <ul class="questions__li">
-            <li class="questions__li"></li>
-            <li class="questions__li"></li>
+        <ul class="questions-form__li">
+            <li class="questions-form__li"><img src="img/MailIcon2.png" />info@bestshop.xyz</li>
+            <li class="questions-form__li"><img src="img/PhoneIcon2.png" />123 456 789</li>
         </ul>
-        <form class="form-content" action="">
-            <label for="name"></label>
-            <input type="text" id="name" name="name" required>
 
-            <label for="email"></label>
-            <input type="email" id="email" name="email" required>
+        <form class="questions-form__form-content" action="">
 
-            <button type="submit">Enviar</button>
+            <div class="questions-form__form-content__group">
+                <label for="name">NAME</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="questions-form__form-content__group">
+                <label for="email">EMAIL</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <label class="questions-form__form-content__checkbox">
+                <input type="checkbox" class="questions-form__form-content__checkbox__check" required>
+                <p class="checkbox__p">I hereby give consent for my personal data included in my application to be
+                    processed for the purposes of the recruitment process under the European Parliament’s and Council of
+                    the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard
+                    to the processing of personal data and on the free movement of such data, and repealing Directive
+                    95/46/EC (Data Protection Directive)</p>
+                <button type="submit" class="checkbox__button">Send</button>
+            </label>
+
         </form>
+
+        </form>
+
     </section>
 
-    <footer>
-
-    </footer>
+    <!-- <footer>
+        <div> 
+            <h2>OXYGENShop</h2>
+            <h3>© 2022 OXYGEN, All Rights Reserved</h3>
+        </div>
+     
+        <div>
+            <img src="" alt="">
+            <img src="" alt="">
+        </div>
+    </footer> -->
 </body>
 
 </html>

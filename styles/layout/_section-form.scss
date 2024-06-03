@@ -1,0 +1,108 @@
+@import 'mixins';
+
+.questions-form {
+    width: 100%;
+    padding: 0 1rem;
+    margin-top: 2.5rem;
+
+    &__h2 {
+        font-family: 'Raleway';
+        font-weight: 400;
+        font-size: 2.2rem;
+    }
+
+    &__h3 {
+        font-family: 'Open Sans';
+        font-weight: 400;
+        font-size: 1rem;
+    }
+
+    &__li {
+        list-style-type: none;
+        font-weight: 600;
+        font-family: 'Open Sans';
+        font-size: 0.9rem;
+        color: #A5A5A5;
+        padding-left: 1.5rem;
+        padding-top: 1rem;
+        position: relative;
+        left: -0.5rem;
+
+        img {
+            position: absolute;
+            left: -0.4rem;
+            bottom: -0.3rem;
+        }
+    }
+
+    &__form-content {
+        margin: 3rem auto;
+
+        &__group {
+            margin-bottom: 1rem;
+
+            label {
+                display: block;
+                margin-bottom: 5px;
+                color: #08A6E4;
+                font-weight: 600;
+                font-size: 0.7rem;
+                font-family: 'Open Sans';
+
+            }
+
+            input {
+                display: block;
+                width: 100%;
+                padding: 0.7rem;
+                box-sizing: border-box;
+                border: none;
+                border-bottom: 1px solid #ccc;
+                outline: none;
+
+            }
+        }
+
+        &__checkbox {
+            position: relative;
+            display: block;
+            margin-bottom: 15px;
+            cursor: pointer;
+
+            &__check {
+                position: absolute;
+                top: 1.4rem;
+                left: 0;
+                margin: 0;
+            }
+
+            .checkbox__p {
+                display: inline-block;
+                margin: 1.3rem 0 0 1.5rem;
+                overflow-x: auto;
+                max-width: calc(100% - 30px);
+
+                font-family: 'Open Sans';
+                font-weight: 400;
+                font-size: 0.7rem;
+                color: #707070;
+            }
+
+            .checkbox__button {
+                @include prices-buttons;
+                position: absolute;
+                top: 8rem;
+                right: 1rem;
+                background-color: #08A6E4;
+                cursor: pointer;
+
+                &__button:hover {
+                    background-color: #08A6E4;
+                }
+            }
+        }
+
+    }
+
+
+}

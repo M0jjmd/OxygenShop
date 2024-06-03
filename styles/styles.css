@@ -436,6 +436,102 @@
   background-color: #55DFB4;
 }
 
+.questions-form {
+  width: 100%;
+  padding: 0 1rem;
+  margin-top: 2.5rem;
+}
+.questions-form__h2 {
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 2.2rem;
+}
+.questions-form__h3 {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 1rem;
+}
+.questions-form__li {
+  list-style-type: none;
+  font-weight: 600;
+  font-family: "Open Sans";
+  font-size: 0.9rem;
+  color: #A5A5A5;
+  padding-left: 1.5rem;
+  padding-top: 1rem;
+  position: relative;
+  left: -0.5rem;
+}
+.questions-form__li img {
+  position: absolute;
+  left: -0.4rem;
+  bottom: -0.3rem;
+}
+.questions-form__form-content {
+  margin: 3rem auto;
+}
+.questions-form__form-content__group {
+  margin-bottom: 1rem;
+}
+.questions-form__form-content__group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #08A6E4;
+  font-weight: 600;
+  font-size: 0.7rem;
+  font-family: "Open Sans";
+}
+.questions-form__form-content__group input {
+  display: block;
+  width: 100%;
+  padding: 0.7rem;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+}
+.questions-form__form-content__checkbox {
+  position: relative;
+  display: block;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+.questions-form__form-content__checkbox__check {
+  position: absolute;
+  top: 1.4rem;
+  left: 0;
+  margin: 0;
+}
+.questions-form__form-content__checkbox .checkbox__p {
+  display: inline-block;
+  margin: 1.3rem 0 0 1.5rem;
+  overflow-x: auto;
+  max-width: calc(100% - 30px);
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 0.7rem;
+  color: #707070;
+}
+.questions-form__form-content__checkbox .checkbox__button {
+  font-family: "Open Sans";
+  color: white;
+  font-weight: bold;
+  padding: 1rem 3.5rem;
+  border-radius: 30px;
+  outline: none;
+  border: none;
+  display: absolute;
+  transform: translate(0, 50%);
+  position: absolute;
+  top: 8rem;
+  right: 1rem;
+  background-color: #08A6E4;
+  cursor: pointer;
+}
+.questions-form__form-content__checkbox .checkbox__button__button:hover {
+  background-color: #08A6E4;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
