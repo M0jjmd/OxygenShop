@@ -1,0 +1,37 @@
+.footer {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    position: relative;
+    box-shadow: 0 -5px 10px -5px rgba(128, 128, 128, 0.5);
+    width: 100%;
+    margin-top: 6rem;
+
+    &__logo-rights {
+        &__h2{
+            font-family: "Raleway";
+            font-weight: 300;
+            color: #08A6E4;
+            left: 20px;
+            font-size: 1.4rem;
+        }
+        &__h3 {
+            font-family: 'Open Sans';
+            font-weight: 400;
+            font-size: 0.5rem;
+            color: #A5A5A5;
+        }
+        
+    }
+
+    &__facebook-twitter {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        height: auto;
+        right: 2rem;
+
+        .twitter-logo {
+            margin-right: 1rem;
+        }
+    }
+}
