@@ -93,93 +93,50 @@
   text-align: center;
   padding: 1rem;
 }
-.popular__first {
+.popular__card {
   text-align: center;
+  margin: 1.5rem;
   font-family: "Raleway";
 }
-.popular__first__img {
+.popular__card__img {
   position: relative;
   display: inline-block;
   margin: 0 auto;
-  text-align: center;
 }
-.popular__first__img__ellipse1 {
+.popular__card__img__ellipse1 {
   position: relative;
 }
-.popular__first__img__person2 {
+.popular__card__img__person2 {
   position: absolute;
   right: -12%;
 }
-.popular__first__entries {
-  font-size: 1.5rem;
-  font-weight: 800;
-  text-align: center;
-  letter-spacing: 0.2rem;
-}
-.popular__first__dailyentries {
-  font-size: 1rem;
-  text-align: center;
-  font-weight: 400;
-  margin-top: 0.5rem;
-  color: #A5A5A5;
-}
-.popular__where {
-  text-align: center;
-  margin: 3rem auto;
-  font-family: "Raleway";
-}
-.popular__where__img {
-  position: relative;
-  display: inline-block;
-  margin: 0 auto;
-}
-.popular__where__img__ellipse2 {
+.popular__card__img__ellipse2 {
   position: relative;
 }
-.popular__where__img__eye2 {
+.popular__card__img__eye2 {
   position: absolute;
   right: -40%;
   top: 18%;
 }
-.popular__where__seen {
-  font-size: 1.5rem;
-  font-weight: 800;
-  text-align: center;
-  letter-spacing: 0.2rem;
-}
-.popular__where__seenproducts {
-  margin-top: 0.5rem;
-  text-align: center;
-  font-weight: 400;
-  color: #A5A5A5;
-}
-.popular__recognition {
-  text-align: center;
-  font-family: "Raleway";
-}
-.popular__recognition__img {
-  text-align: center;
-  display: inline-block;
+.popular__card__img__ellipse3 {
   position: relative;
 }
-.popular__recognition__img__ellipse3 {
-  position: relative;
-}
-.popular__recognition__img__catalog2 {
+.popular__card__img__catalog2 {
   position: absolute;
   right: -35%;
   top: 10%;
 }
-.popular__recognition__posts {
+.popular__card__h2 {
   font-size: 1.5rem;
   font-weight: 800;
   text-align: center;
   letter-spacing: 0.2rem;
 }
-.popular__recognition__added {
-  margin: 0.5rem auto 3rem;
+.popular__card__h3 {
+  font-size: 1rem;
   text-align: center;
   font-weight: 400;
+  margin-top: 0.5rem;
   color: #A5A5A5;
 }
 
