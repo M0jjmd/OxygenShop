@@ -22,6 +22,47 @@
   display: none;
 }
 
+@media only screen and (min-width: 1000px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header__menu {
+    display: none;
+  }
+  .header__links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    width: 50%;
+    margin-right: 3rem;
+  }
+  .header__links li a {
+    font-family: "Open Sans";
+    text-decoration: none;
+    color: #a5a5a5;
+    font-weight: 700;
+    font-size: 0.7rem;
+    letter-spacing: 0.1rem;
+    padding-bottom: 1rem;
+    position: relative;
+  }
+  .header__links li a:hover {
+    color: #000;
+    text-decoration: none;
+  }
+  .header__links li a:hover::after {
+    content: "";
+    position: absolute;
+    bottom: -0.7rem;
+    left: 0;
+    width: 100%;
+    border-bottom: 3px solid #08A6E4;
+  }
+}
 .footer {
   background-color: #f8f9fa;
   padding: 1rem;
