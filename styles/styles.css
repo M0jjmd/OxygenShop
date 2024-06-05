@@ -112,23 +112,47 @@
 }
 .sell__button {
   font-family: "Open Sans";
-  background-color: #08A6E4;
   color: white;
   font-weight: bold;
-  width: 100%;
-  height: 3.7rem;
+  padding: 1rem 3.5rem;
   border-radius: 30px;
   outline: none;
   border: none;
-}
-
-.foto img {
+  transform: translate(0, 50%);
+  background-color: #08A6E4;
   width: 100%;
 }
 
+@media only screen and (min-width: 1000px) {
+  .sell__button {
+    width: 30rem;
+  }
+}
+.foto-phone {
+  display: initial;
+}
+.foto-phone img {
+  width: 100%;
+}
+
+.foto-desk {
+  display: none;
+}
+
+@media only screen and (min-width: 1000px) {
+  .foto-phone {
+    display: none;
+  }
+  .foto-desk {
+    display: initial;
+  }
+  .foto-desk img {
+    width: 100%;
+  }
+}
 .popular__h2 {
   font-family: "Raleway";
-  font-weight: 300;
+  font-weight: 400;
   font-size: 1.8rem;
   margin: 0 auto;
   text-align: center;
@@ -181,6 +205,16 @@
   color: #A5A5A5;
 }
 
+@media only screen and (min-width: 1000px) {
+  .popular {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-evenly;
+  }
+}
 .advertisements {
   background-color: #F7F7F7;
   padding-top: 0.5rem;
@@ -197,7 +231,7 @@
   border-radius: 5px;
   border: 0.1rem solid #E8E9ED;
 }
-.advertisements__card__p {
+.advertisements__card__text__p {
   font-family: "Open Sans";
   font-size: 1rem;
   text-align: center;
@@ -207,13 +241,16 @@
   padding: 0 1rem;
   padding-bottom: 1.4rem;
 }
-.advertisements__card__h2 {
+.advertisements__card__text__h2 {
   font-family: "Raleway";
   font-size: 2rem;
   font-weight: 400;
   text-align: center;
   text-align: left;
   padding: 1rem 1rem;
+}
+.advertisements__card__text__hr {
+  display: none;
 }
 .advertisements__card__third__h2 {
   font-family: "Raleway";
@@ -236,6 +273,9 @@
   position: absolute;
   right: -10%;
   top: -30%;
+}
+.advertisements__card__img__red-frame-desk {
+  display: none;
 }
 .advertisements__card__img__ellipse4 {
   position: relative;
@@ -265,6 +305,56 @@
   margin: auto;
 }
 
+@media only screen and (min-width: 1000px) {
+  .advertisements__card {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .advertisements__card__text {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+  }
+  .advertisements__card__text__hr {
+    display: initial;
+    width: 65%;
+    height: 0.15rem;
+    border: 0;
+    background-color: #FB3B64;
+  }
+  .advertisements__card__img {
+    display: flex;
+    align-items: center;
+    padding: 3rem 0;
+  }
+  .advertisements__card__img__macbook {
+    position: relative;
+    width: 386.44px;
+    height: 219px;
+  }
+  .advertisements__card__img__red-frame {
+    display: none;
+  }
+  .advertisements__card__img__red-frame-desk {
+    display: initial;
+    position: absolute;
+    right: -10%;
+    top: -5%;
+  }
+  .advertisements__card__img__ellipse4 {
+    position: relative;
+    width: 320px;
+    height: 320px;
+  }
+  .advertisements__card__img__iPhone {
+    position: absolute;
+    right: -35%;
+    top: 5%;
+    width: 426px;
+    height: 328px;
+  }
+}
 .prices {
   text-align: center;
 }

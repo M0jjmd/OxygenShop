@@ -1,5 +1,25 @@
-.foto {
-    img {
-       width: 100%;
-    }
- }
+.foto-phone {
+   display: initial;
+
+   img {
+      width: 100%;
+   }
+}
+
+.foto-desk {
+   display: none;
+}
+
+@media only screen and (min-width: 1000px) {
+   .foto-phone {
+      display: none;
+   }
+
+   .foto-desk {
+      display: initial;
+
+      img {
+         width: 100%;
+      }
+   }
+}

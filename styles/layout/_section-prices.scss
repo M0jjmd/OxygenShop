@@ -1,4 +1,5 @@
 @import 'mixins';
+
 .prices {
     text-align: center;
 
@@ -13,7 +14,7 @@
     &__basic {
         @include prices-styles;
         border: 1px solid #FB3B64;
-        
+
         &__price {
             display: inline-block;
             width: 40%;
@@ -31,7 +32,7 @@
                 font-weight: 300;
                 font-size: 2.5rem;
             }
-            
+
         }
 
         &__benefits {
@@ -55,7 +56,7 @@
         @include prices-styles;
         border: 1px solid #07ACE6;
         margin: 2rem 0;
-        
+
         &__price {
             display: inline-block;
             width: 40%;
@@ -73,7 +74,7 @@
                 font-weight: 300;
                 font-size: 2.5rem;
             }
-            
+
         }
 
         &__benefits {
@@ -96,7 +97,7 @@
     &__premium {
         @include prices-styles;
         border: 1px solid #55DFB4;
-        
+
         &__price {
             display: inline-block;
             width: 40%;
@@ -114,7 +115,7 @@
                 font-weight: 300;
                 font-size: 2.5rem;
             }
-            
+
         }
 
         &__benefits {
@@ -140,7 +141,7 @@
     // &__professional {
     //     @include prices-styles;
     //     border: 1px solid #07ACE6;
-        
+
     //     &__price {
     //         display: inline-block;
     //         width: 40%;
@@ -157,7 +158,7 @@
     //             font-weight: 300;
     //             font-size: 2rem;
     //         }
-            
+
     //     }
 
     //     &__benefits {
@@ -191,7 +192,7 @@
     // &__premium {
     //     @include prices-styles;
     //     border: 1px solid #55DFB4;
-        
+
     //     &__price {
     //         display: inline-block;
     //         width: 40%;
@@ -208,7 +209,7 @@
     //             font-weight: 300;
     //             font-size: 2rem;
     //         }
-            
+
     //     }
 
     //     &__benefits {

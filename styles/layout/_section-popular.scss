@@ -2,7 +2,7 @@
 
     &__h2 {
         font-family: "Raleway";
-        font-weight: 300;
+        font-weight: 400;
         font-size: 1.8rem;
         margin: 0 auto;
         text-align: center;
@@ -72,5 +72,17 @@
             color: #A5A5A5;
 
         }
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .popular {
+        width: 60%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        justify-content: space-evenly;
+        
     }
 }

@@ -100,16 +100,16 @@
 
                 transform-origin: bottom left;
                 clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
-              }
+            }
 
-              input[type="checkbox"]:checked::before {
+            input[type="checkbox"]:checked::before {
                 transform: scale(1);
 
                 background-color: #08A6E4;
 
                 transform-origin: bottom left;
                 clip-path: polygon(20% 50%, 12% 60%, 40% 100%, 92% 18%, 85% 10%, 40% 80%)
-              }
+            }
 
             .checkbox__p {
                 display: inline-block;
