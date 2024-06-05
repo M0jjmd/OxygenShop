@@ -38,7 +38,9 @@
 
             }
 
-            &__hr {
+            &__hr-red,
+            &__hr-blue,
+            &__hr-green {
                 display: none;
             }
         }
@@ -109,6 +111,10 @@
 
             }
         }
+
+        &__geen-background-desk {
+            display: none;
+        }
     }
 }
 
@@ -119,18 +125,47 @@
             display: flex;
             flex-direction: row-reverse;
 
+
+            &__second {
+                flex-direction: row;
+            }
+
+            &__third {
+                flex-direction: row;
+
+            }
+
             &__text {
                 width: 40%;
                 display: flex;
                 flex-direction: column;
                 align-self: center;
 
-                &__hr {
+                &__hr-red {
                     display: initial;
                     width: 65%;
                     height: 0.15rem;
                     border: 0;
+                    margin-left: 1rem;
                     background-color: #FB3B64;
+                }
+
+                &__hr-blue {
+                    display: initial;
+                    width: 65%;
+                    height: 0.15rem;
+                    border: 0;
+                    margin-left: 1rem;
+                    background-color: #08A6E4;
+                }
+
+                &__hr-green {
+                    display: initial;
+                    width: 65%;
+                    height: 0.15rem;
+                    border: 0;
+                    margin-left: 1rem;
+                    background-color: #55DFB4;
                 }
 
             }
@@ -169,12 +204,22 @@
                 &__iPhone {
                     position: absolute;
                     right: -35%;
-                    top: 5%;
+                    top: 17%;
                     width: 426px;
                     height: 328px;
 
                 }
             }
+
+            &__geen-background {
+                display: none;
+            }
+
+            &__geen-background-desk {
+                display: initial;
+            }
+
         }
+
     }
 }

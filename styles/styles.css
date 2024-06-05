@@ -249,7 +249,7 @@
   text-align: left;
   padding: 1rem 1rem;
 }
-.advertisements__card__text__hr {
+.advertisements__card__text__hr-red, .advertisements__card__text__hr-blue, .advertisements__card__text__hr-green {
   display: none;
 }
 .advertisements__card__third__h2 {
@@ -304,11 +304,20 @@
   bottom: 0;
   margin: auto;
 }
+.advertisements__card__geen-background-desk {
+  display: none;
+}
 
 @media only screen and (min-width: 1000px) {
   .advertisements__card {
     display: flex;
     flex-direction: row-reverse;
+  }
+  .advertisements__card__second {
+    flex-direction: row;
+  }
+  .advertisements__card__third {
+    flex-direction: row;
   }
   .advertisements__card__text {
     width: 40%;
@@ -316,12 +325,29 @@
     flex-direction: column;
     align-self: center;
   }
-  .advertisements__card__text__hr {
+  .advertisements__card__text__hr-red {
     display: initial;
     width: 65%;
     height: 0.15rem;
     border: 0;
+    margin-left: 1rem;
     background-color: #FB3B64;
+  }
+  .advertisements__card__text__hr-blue {
+    display: initial;
+    width: 65%;
+    height: 0.15rem;
+    border: 0;
+    margin-left: 1rem;
+    background-color: #08A6E4;
+  }
+  .advertisements__card__text__hr-green {
+    display: initial;
+    width: 65%;
+    height: 0.15rem;
+    border: 0;
+    margin-left: 1rem;
+    background-color: #55DFB4;
   }
   .advertisements__card__img {
     display: flex;
@@ -350,104 +376,105 @@
   .advertisements__card__img__iPhone {
     position: absolute;
     right: -35%;
-    top: 5%;
+    top: 17%;
     width: 426px;
     height: 328px;
+  }
+  .advertisements__card__geen-background {
+    display: none;
+  }
+  .advertisements__card__geen-background-desk {
+    display: initial;
   }
 }
 .prices {
   text-align: center;
 }
 .prices__title {
+  text-align: center;
   font-family: "Raleway";
   margin-top: 2.5rem;
   margin-bottom: 1rem;
   font-size: 2.5rem;
   font-weight: 400;
 }
-.prices__basic {
-  display: inline-block;
-  position: relative;
-  width: 80%;
-  border-radius: 20px;
+.prices--red {
   border: 1px solid #FB3B64;
+  border-radius: 20px;
 }
-.prices__basic__price {
-  display: inline-block;
-  width: 40%;
-  transform: translate(0, -40%);
-}
-.prices__basic__price__h3 {
-  font-family: "Raleway";
-}
-.prices__basic__price__h4 {
-  font-family: "Open Sans";
+.prices--red--font {
   color: #FB3B64;
-  font-weight: 300;
-  font-size: 2.5rem;
 }
-.prices__basic__benefits {
-  display: inline-block;
-  position: relative;
-  width: 45%;
-  list-style-type: none;
-  text-align: left;
-  margin-top: 0.5rem;
-}
-.prices__basic__benefits__li {
-  font-family: "Open Sans";
-  font-weight: 400;
-  font-size: 0.9rem;
-  margin: 0.6rem;
-}
-.prices__basic__button {
-  font-family: "Open Sans";
-  color: white;
-  font-weight: bold;
-  padding: 1rem 3.5rem;
-  border-radius: 30px;
-  outline: none;
-  border: none;
-  transform: translate(0, 50%);
+.prices--red--background {
   background-color: #FB3B64;
 }
-.prices__professional {
+.prices--red--button {
+  background-color: #FB3B64;
+}
+.prices--blue {
+  border: 1px solid #07ACE6;
+  margin: 2.5rem 0;
+  border-radius: 20px;
+}
+.prices--blue--font {
+  color: #07ACE6;
+}
+.prices--blue--background {
+  background-color: #07ACE6;
+}
+.prices--blue--button {
+  background-color: #07ACE6;
+}
+.prices--green {
+  border: 1px solid #55DFB4;
+  border-radius: 20px;
+}
+.prices--green--font {
+  color: #55DFB4;
+}
+.prices--green--background {
+  background-color: #55DFB4;
+}
+.prices--green--button {
+  background-color: #55DFB4;
+}
+.prices__cards {
   display: inline-block;
   position: relative;
   width: 80%;
   border-radius: 20px;
-  border: 1px solid #07ACE6;
-  margin: 2rem 0;
 }
-.prices__professional__price {
+.prices__cards__card__price {
   display: inline-block;
   width: 40%;
   transform: translate(0, -40%);
 }
-.prices__professional__price__h3 {
+.prices__cards__card__price__h3 {
   font-family: "Raleway";
 }
-.prices__professional__price__h4 {
+.prices__cards__card__price__h4 {
   font-family: "Open Sans";
-  color: #FB3B64;
   font-weight: 300;
   font-size: 2.5rem;
 }
-.prices__professional__benefits {
+.prices__cards__card__benefits {
   display: inline-block;
   position: relative;
-  width: 45%;
+  width: 40%;
   list-style-type: none;
   text-align: left;
   margin-top: 0.5rem;
 }
-.prices__professional__benefits__li {
+.prices__cards__card__benefits__li {
   font-family: "Open Sans";
   font-weight: 400;
   font-size: 0.9rem;
   margin: 0.6rem;
 }
-.prices__professional__button {
+.prices__cards__card__benefits__li img {
+  margin-right: 0.3rem;
+}
+.prices__cards__card__button {
   font-family: "Open Sans";
   color: white;
   font-weight: bold;
@@ -456,55 +483,47 @@
   outline: none;
   border: none;
   transform: translate(0, 50%);
-  background-color: #07ACE6;
-}
-.prices__premium {
-  display: inline-block;
-  position: relative;
-  width: 80%;
-  border-radius: 20px;
-  border: 1px solid #55DFB4;
-}
-.prices__premium__price {
-  display: inline-block;
-  width: 40%;
-  transform: translate(0, -40%);
-}
-.prices__premium__price__h3 {
-  font-family: "Raleway";
-}
-.prices__premium__price__h4 {
-  font-family: "Open Sans";
-  color: #FB3B64;
-  font-weight: 300;
-  font-size: 2.5rem;
-}
-.prices__premium__benefits {
-  display: inline-block;
-  position: relative;
-  width: 45%;
-  list-style-type: none;
-  text-align: left;
-  margin-top: 0.5rem;
-}
-.prices__premium__benefits__li {
-  font-family: "Open Sans";
-  font-weight: 400;
-  font-size: 0.9rem;
-  padding: 0.2rem;
-}
-.prices__premium__button {
-  font-family: "Open Sans";
-  color: white;
-  font-weight: bold;
-  padding: 1rem 3.5rem;
-  border-radius: 30px;
-  outline: none;
-  border: none;
-  transform: translate(0, 50%);
-  background-color: #55DFB4;
 }
 
+@media only screen and (min-width: 1000px) {
+  .prices {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .prices__title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+  }
+  .prices__cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+  }
+  .prices__cards__card {
+    flex: 1;
+    margin: 1rem 6rem;
+    padding: 3rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .prices__cards__card__price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: none;
+  }
+  .prices__cards__card__benefits {
+    position: initial;
+  }
+  .prices__cards__card__button {
+    transform: translate(0%, 150%);
+  }
+}
 .questions-form {
   width: 100%;
   padding: 0 1rem;
