@@ -25,7 +25,6 @@
                 text-align: left;
                 padding: 0 1rem;
                 padding-bottom: 1.4rem;
-
             }
 
             &__h2 {
@@ -35,7 +34,6 @@
                 text-align: center;
                 text-align: left;
                 padding: 1rem 1rem;
-
             }
 
             &__hr-red,
@@ -63,14 +61,12 @@
 
             &__macbook {
                 position: relative;
-
             }
 
             &__red-frame {
                 position: absolute;
                 right: -10%;
                 top: -30%;
-
             }
 
             &__red-frame-desk {
@@ -79,14 +75,12 @@
 
             &__ellipse4 {
                 position: relative;
-
             }
 
             &__iPhone {
                 position: absolute;
                 right: -35%;
                 top: 5%;
-
             }
         }
 
@@ -108,7 +102,6 @@
                 top: 0;
                 bottom: 0;
                 margin: auto;
-
             }
         }
 
@@ -120,13 +113,9 @@
 
 @media only screen and (min-width: 1000px) {
     .advertisements {
-
         &__card {
             display: flex;
             flex-direction: row-reverse;
-            border: none;
-
-
 
             &__second {
                 flex-direction: row;
@@ -134,6 +123,7 @@
 
             &__third {
                 background-color: #F7F7F7;
+                border: none;
                 flex-direction: row;
                 justify-content: space-between;
                 padding-top: 0;
@@ -151,7 +141,6 @@
                 display: flex;
                 flex-direction: column;
                 align-self: center;
-
 
                 &__hr-red {
                     display: initial;
@@ -191,12 +180,10 @@
                     position: relative;
                     width: 386.44px;
                     height: 219px;
-
                 }
 
                 &__red-frame {
                     display: none;
-
                 }
 
                 &__red-frame-desk {
@@ -210,7 +197,6 @@
                     position: relative;
                     width: 320px;
                     height: 320px;
-
                 }
 
                 &__iPhone {
@@ -219,7 +205,6 @@
                     top: 17%;
                     width: 426px;
                     height: 328px;
-
                 }
             }
 
@@ -235,8 +220,6 @@
                 align-items: center;
                 width: 30%;
             }
-
         }
-
     }
 }

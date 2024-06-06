@@ -21,37 +21,31 @@
 
             &__ellipse1 {
                 position: relative;
-
             }
 
             &__person2 {
                 position: absolute;
                 right: -12%;
-
             }
 
             &__ellipse2 {
                 position: relative;
-
             }
 
             &__eye2 {
                 position: absolute;
                 right: -40%;
                 top: 18%;
-
             }
 
             &__ellipse3 {
                 position: relative;
-
             }
 
             &__catalog2 {
                 position: absolute;
                 right: -35%;
                 top: 10%;
-
             }
 
         }
@@ -61,7 +55,6 @@
             font-weight: 800;
             text-align: center;
             letter-spacing: 0.2rem;
-
         }
 
         &__h3 {
@@ -70,7 +63,6 @@
             font-weight: 400;
             margin-top: 0.5rem;
             color: #A5A5A5;
-
         }
     }
 }
@@ -83,6 +75,5 @@
         flex-direction: row;
         justify-content: center;
         justify-content: space-evenly;
-        
     }
 }

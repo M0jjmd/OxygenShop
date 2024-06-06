@@ -10,7 +10,6 @@
         margin-bottom: 1rem;
         font-size: 2.5rem;
         font-weight: 400;
-
     }
 
     &--red {
@@ -19,17 +18,14 @@
 
         &--font {
             color: #FB3B64;
-
         }
 
         &--background {
             background-color: #FB3B64;
-
         }
 
         &--button {
             background-color: #FB3B64;
-
         }
     }
 
@@ -40,17 +36,14 @@
 
         &--font {
             color: #07ACE6;
-
         }
 
         &--background {
             background-color: #07ACE6;
-
         }
 
         &--button {
             background-color: #07ACE6;
-
         }
     }
 
@@ -60,17 +53,14 @@
 
         &--font {
             color: #55DFB4;
-
         }
 
         &--background {
             background-color: #55DFB4;
-
         }
 
         &--button {
             background-color: #55DFB4;
-
         }
     }
 
@@ -78,7 +68,6 @@
         @include prices-styles;
 
         &__card {
-
             &__price {
                 display: inline-block;
                 width: 40%;
@@ -86,14 +75,12 @@
 
                 &__h3 {
                     font-family: "Raleway";
-
                 }
 
                 &__h4 {
                     font-family: "Open Sans";
                     font-weight: 300;
                     font-size: 2.5rem;
-
                 }
             }
 
@@ -108,14 +95,12 @@
 
                     img {
                         margin-right: 0.3rem;
-
                     }
                 }
             }
 
             &__button {
                 @include prices-buttons;
-
             }
         }
     }
@@ -163,14 +148,11 @@
                     align-items: center;
                     text-align: center;
                     width: 100%;
-
                 }
 
                 &__button {
                     transform: translate(0%, 150%);
-
                 }
-
             }
         }
 

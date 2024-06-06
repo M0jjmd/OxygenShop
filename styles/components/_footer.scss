@@ -7,20 +7,21 @@
     margin-top: 6rem;
 
     &__logo-rights {
-        &__h2{
+        &__h2 {
             font-family: "Raleway";
             font-weight: 300;
             color: #08A6E4;
             left: 20px;
             font-size: 1.4rem;
         }
+
         &__h3 {
             font-family: 'Open Sans';
             font-weight: 400;
             font-size: 0.5rem;
             color: #A5A5A5;
         }
-        
+
     }
 
     &__facebook-twitter {
@@ -32,6 +33,18 @@
 
         .twitter-logo {
             margin-right: 1rem;
+        }
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .footer {
+        &__logo-rights {
+            margin-left: 4rem;
+        }
+
+        &__facebook-twitter {
+            margin-right: 4rem;
         }
     }
 }
