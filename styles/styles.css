@@ -312,12 +312,21 @@
   .advertisements__card {
     display: flex;
     flex-direction: row-reverse;
+    border: none;
   }
   .advertisements__card__second {
     flex-direction: row;
   }
   .advertisements__card__third {
+    background-color: #F7F7F7;
     flex-direction: row;
+    justify-content: space-between;
+    padding-top: 0;
+  }
+  .advertisements__card__third__text {
+    background-color: white;
+    border: 0.1rem solid #E8E9ED;
+    padding: 5rem;
   }
   .advertisements__card__text {
     width: 40%;
@@ -385,6 +394,11 @@
   }
   .advertisements__card__geen-background-desk {
     display: initial;
+    background-color: #55DFB4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
   }
 }
 .prices {

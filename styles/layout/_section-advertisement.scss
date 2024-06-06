@@ -124,6 +124,8 @@
         &__card {
             display: flex;
             flex-direction: row-reverse;
+            border: none;
+
 
 
             &__second {
@@ -131,7 +133,16 @@
             }
 
             &__third {
+                background-color: #F7F7F7;
                 flex-direction: row;
+                justify-content: space-between;
+                padding-top: 0;
+
+                &__text {
+                    background-color: white;
+                    border: 0.1rem solid #E8E9ED;
+                    padding: 5rem;
+                }
 
             }
 
@@ -140,6 +151,7 @@
                 display: flex;
                 flex-direction: column;
                 align-self: center;
+
 
                 &__hr-red {
                     display: initial;
@@ -217,6 +229,11 @@
 
             &__geen-background-desk {
                 display: initial;
+                background-color: #55DFB4;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 30%;
             }
 
         }
