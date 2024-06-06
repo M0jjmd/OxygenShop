@@ -507,6 +507,7 @@
     flex: 1;
     margin: 1rem 6rem;
     padding: 3rem 0.5rem;
+    width: 30%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -519,9 +520,26 @@
   }
   .prices__cards__card__benefits {
     position: initial;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
   }
   .prices__cards__card__button {
     transform: translate(0%, 150%);
+  }
+  .prices--red:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #FB3B64;
+  }
+  .prices--blue:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #07ACE6;
+  }
+  .prices--green:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #55DFB4;
   }
 }
 .questions-form {
