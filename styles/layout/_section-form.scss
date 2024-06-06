@@ -137,3 +137,52 @@
         }
     }
 }
+
+@media only screen and (min-width: 1000px) {
+    .questions-form {
+        display: flex;
+        margin: 2rem 13rem;
+        width: auto;
+
+        &__form-content {
+            width: 40%;
+        }
+
+        &__h2 {
+            margin-bottom: 1rem;
+        }
+
+        &__h3 {
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    .contacts {
+        display: flex;
+        flex-direction: column;
+        padding-top: 2.5rem;
+        align-items: center;
+
+        &__text {
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            justify-content: flex-start;
+        }
+
+        &__ul {
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            list-style: none; 
+            padding: 0;
+            padding-left: 7.7rem;
+
+            &__li {
+                display: flex; 
+                align-items: center;
+                margin-right: 20px; 
+            }
+        }
+    }
+}
