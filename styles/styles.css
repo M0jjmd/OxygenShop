@@ -17,6 +17,7 @@
   transform: translateY(-50%);
   height: auto;
   right: 20px;
+  color: #08A6E4;
 }
 .header__links {
   display: none;
