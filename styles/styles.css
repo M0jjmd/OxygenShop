@@ -822,6 +822,16 @@
   height: 2000px;
 }
 
+.returnTop {
+  padding: 1rem 1rem;
+  background-color: #08A6E4;
+  border-radius: 50%;
+  border: 1px solid;
+  position: fixed;
+  bottom: 5rem;
+  right: 0.5rem;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
