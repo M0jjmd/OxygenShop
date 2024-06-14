@@ -603,8 +603,8 @@
 }
 .questions-form__h2 {
   font-family: "Raleway";
-  font-weight: 400;
-  font-size: 2.2rem;
+  font-weight: 500;
+  font-size: 2.5rem;
 }
 .questions-form__h3 {
   font-family: "Open Sans";
@@ -722,13 +722,12 @@
 @media only screen and (min-width: 1000px) {
   .questions-form {
     display: flex;
-    margin: 2rem auto;
-    margin-right: 20rem;
-    margin-left: 30rem;
-    width: auto;
+    justify-content: center;
+    width: 100%;
+    padding: 0 20rem;
   }
   .questions-form__form-content {
-    width: 40%;
+    min-width: 30rem;
   }
   .questions-form__h2 {
     margin-bottom: 1rem;
@@ -740,6 +739,7 @@
     display: flex;
     flex-direction: column;
     padding-top: 2.5rem;
+    margin: 0;
   }
   .contacts__text {
     display: flex;
@@ -747,16 +747,18 @@
   }
   .contacts__ul {
     display: flex;
-    justify-content: center;
     align-items: center;
     list-style: none;
-    padding: 0;
-    padding-left: 1.4rem;
+    white-space: nowrap;
   }
   .contacts__ul__li {
+    margin-right: 1rem;
+    white-space: nowrap;
+  }
+  .all-form {
     display: flex;
-    align-items: center;
-    margin-right: 20px;
+    justify-content: center;
+    width: 100%;
   }
 }
 .footer {

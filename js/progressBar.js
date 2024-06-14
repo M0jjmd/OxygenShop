@@ -1,4 +1,7 @@
-window.onscroll = function() {
+// window.onscroll = function() {
+//     updateProgressBar();
+// };
+window.onscroll = () => {
     updateProgressBar();
 };
 

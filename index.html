@@ -230,43 +230,50 @@
     </section>
 
     <section class="questions-form">
-        <div class="contacts">
-            <div class="contacts__text">
-                <h2 class="questions-form__h2">Any questions?</h2>
-                <h3 class="questions-form__h3">Leave your email address or call us!</h3>
+        <div class="all-form">
+            <div class="contacts">
+                <div class="contacts__text">
+                    <h2 class="questions-form__h2">Any questions?</h2>
+                    <h3 class="questions-form__h3">Leave your email address or call us!</h3>
+                </div>
+
+                <ul class="questions-form__li questions-form__contact contacts__ul">
+                    <li class="questions-form__li contacts__ul__li"><img src="img/MailIcon2.png" />moamine517@gmail.com
+                    </li>
+                    <li class="questions-form__li contacts__ul__li"><img src="img/PhoneIcon2.png" />642 756 918</li>
+                </ul>
             </div>
 
-            <ul class="questions-form__li questions-form__contact contacts__ul">
-                <li class="questions-form__li contacts__ul__li"><img src="img/MailIcon2.png" />moamine517@gmail.com</li>
-                <li class="questions-form__li contacts__ul__li"><img src="img/PhoneIcon2.png" />123 456 789</li>
-            </ul>
+            <form class="questions-form__form-content" action="">
+
+                <div class="questions-form__form-content__group">
+                    <label for="name">NAME</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="questions-form__form-content__group">
+                    <label for="email">EMAIL</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <label class="questions-form__form-content__checkbox">
+                    <input type="checkbox" class="questions-form__form-content__checkbox__check" required>
+                    <p class="checkbox__p">I hereby give consent for my personal data included in my application to be
+                        processed for the purposes of the recruitment process under the European Parliament’s and
+                        Council of
+                        the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with
+                        regard
+                        to the processing of personal data and on the free movement of such data, and repealing
+                        Directive
+                        95/46/EC (Data Protection Directive)</p>
+                    <button type="submit" class="checkbox__button">Send</button>
+                </label>
+
+            </form>
         </div>
-
-        <form class="questions-form__form-content" action="">
-
-            <div class="questions-form__form-content__group">
-                <label for="name">NAME</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-
-            <div class="questions-form__form-content__group">
-                <label for="email">EMAIL</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-
-            <label class="questions-form__form-content__checkbox">
-                <input type="checkbox" class="questions-form__form-content__checkbox__check" required>
-                <p class="checkbox__p">I hereby give consent for my personal data included in my application to be
-                    processed for the purposes of the recruitment process under the European Parliament’s and Council of
-                    the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard
-                    to the processing of personal data and on the free movement of such data, and repealing Directive
-                    95/46/EC (Data Protection Directive)</p>
-                <button type="submit" class="checkbox__button">Send</button>
-            </label>
-
-        </form>
-
     </section>
+
+    <button class="returnTop" id="returnTop">&#9650;</button>
 
     <footer class="footer">
         <div class="footer__logo-rights">
