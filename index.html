@@ -161,13 +161,21 @@
     <section class="prices">
 
         <h2 class="prices__title">Pricing</h2>
+        <div class="prices__selector">
+            <select id="currency">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+            </select>
+        </div>
+
         <div class="prices__cards">
 
             <article class="prices__cards__card prices--red">
 
                 <div class="prices__cards__card__price">
-                    <h3 class="prices__cards__card__price__h3">Basic</h3>
-                    <h4 class="prices__cards__card__price__h4 prices--red--font">$0</h4>
+                    <h3 class="prices__cards__card__price__h3" id="basic">Basic</h3>
+                    <h4 class="prices__cards__card__price__h4 prices--red--font" id="basic-h4">$0</h4>
                 </div>
 
                 <ul class="prices__cards__card__benefits">
@@ -191,8 +199,8 @@
             <article class="prices__cards__card prices--blue">
 
                 <div class="prices__cards__card__price">
-                    <h3 class="prices__cards__card__price__h3">professional</h3>
-                    <h4 class="prices__cards__card__price__h4 prices--blue--font">$25</h4>
+                    <h3 class="prices__cards__card__price__h3" id="professional">professional</h3>
+                    <h4 class="prices__cards__card__price__h4 prices--blue--font" id="professional-h4">$25</h4>
                 </div>
 
                 <ul class="prices__cards__card__benefits">
@@ -210,8 +218,8 @@
             <article class="prices__cards__card prices--green">
 
                 <div class="prices__cards__card__price">
-                    <h3 class="prices__cards__card__price__h3">premium</h3>
-                    <h4 class="prices__cards__card__price__h4 prices--green--font">$60</h4>
+                    <h3 class="prices__cards__card__price__h3" id="premium">premium</h3>
+                    <h4 class="prices__cards__card__price__h4 prices--green--font" id="premium-h4">$60</h4>
                 </div>
 
                 <ul class="prices__cards__card__benefits">
@@ -291,12 +299,11 @@
     </footer>
 
     <script src="js/currency.js"></script>
+    <script src="js/api.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/progressBar.js"></script>
     <script src="js/returnTop.js"></script>
-    <script src="js/api.js"></script>
     <script src="js/script.js"></script>
-
 </body>
 
 </html>
