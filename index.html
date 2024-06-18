@@ -255,20 +255,23 @@
                 </ul>
             </div>
 
-            <form class="questions-form__form-content" action="">
+            <form class="questions-form__form-content" id="form" novalidate>
 
                 <div class="questions-form__form-content__group">
                     <label for="name">NAME</label>
-                    <input type="text" id="name" name="name" required>
+                    <input type="text" id="name" name="name">
+                    <p id="nameErrorMessage" class="errorMsg"></p>
                 </div>
 
                 <div class="questions-form__form-content__group">
                     <label for="email">EMAIL</label>
-                    <input type="email" id="email" name="email" required>
+                    <input type="text" id="email" name="email">
+                    <p id="emailErrorMessage" class="errorMsg"></p>
                 </div>
 
                 <label class="questions-form__form-content__checkbox">
-                    <input type="checkbox" class="questions-form__form-content__checkbox__check" required>
+                    <p id="checkBoxErrorMessage" class="errorMsg"></p>
+                    <input type="checkbox" class="questions-form__form-content__checkbox__check" id="form-checkbox">
                     <p class="checkbox__p">I hereby give consent for my personal data included in my application to be
                         processed for the purposes of the recruitment process under the European Parliament’s and
                         Council of
@@ -303,6 +306,7 @@
     <script src="js/menu.js"></script>
     <script src="js/progressBar.js"></script>
     <script src="js/returnTop.js"></script>
+    <script src="js/sendForm.js"></script>
     <script src="js/script.js"></script>
 </body>
 

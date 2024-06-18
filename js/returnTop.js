@@ -8,7 +8,6 @@ function toggleScrollTopBtn() {
     let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
     let scrolled = (winScroll / height) * 100;
     if (scrolled > 30) {
-        console.log("so entra")
         scrollTopBtn.style.display = "block";
     } else {
         scrollTopBtn.style.display = "none";
@@ -16,7 +15,6 @@ function toggleScrollTopBtn() {
 }
 
 document.getElementById("returnTop").addEventListener("click", function () {
-    console.log("test button")
     setTimeout(function () {
         window.scrollTo({
             top: 0,

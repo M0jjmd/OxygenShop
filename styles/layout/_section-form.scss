@@ -35,6 +35,11 @@
         }
     }
 
+    .errorMsg {
+        color: red;
+        display: none;
+    }
+
     &__form-content {
         margin: 3rem auto;
 
@@ -165,7 +170,6 @@
         &__text {
             display: flex;
             flex-direction: column;
-
         }
 
         &__ul {
@@ -177,7 +181,6 @@
             &__li {
                 margin-right: 1rem;
                 white-space: nowrap;
-
             }
         }
     }
@@ -186,6 +189,5 @@
         display: flex;
         justify-content: center;
         width: 100%;
-
     }
 }

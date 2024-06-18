@@ -630,6 +630,10 @@
   left: -0.4rem;
   bottom: -0.3rem;
 }
+.questions-form .errorMsg {
+  color: red;
+  display: none;
+}
 .questions-form__form-content {
   margin: 3rem auto;
 }
@@ -811,7 +815,7 @@
   background: #f3f3f3;
   top: 0;
   left: 0;
-  z-index: 1000;
+  z-index: 2;
 }
 
 .progress-bar {
