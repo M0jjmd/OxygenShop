@@ -47,17 +47,18 @@ closePopup.addEventListener('click', () => {
 })
 
 document.getElementById("popupForm").addEventListener("submit", (event) => {
-    event.preventDefault()
+    event.preventDefault();
 
     const emailRegex = /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
     const email = event.target.email.value;
 
     if (email) {
         if (emailRegex.test(email)) {
-            const formData = {
+            const emailData = {
                 "email": email,
             };
-            sendForm(formData);
+            console.log(emailData);
+            sendNewsletter(emailData);
         } else {
             console.log("Introduzca el correo correctamente.");
         }
@@ -66,9 +67,9 @@ document.getElementById("popupForm").addEventListener("submit", (event) => {
     }
 })
 
-async function sendForm(formData) {
+async function sendNewsletter(emailData) {
     const url = 'https://jsonplaceholder.typicode.com/posts';
-    const data = formData;
+    const data = emailData;
     const headers = {
         'Content-type': 'application/json',
     }
