@@ -11,18 +11,30 @@
         rel="stylesheet">
     <title>OXYGENShop</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <!-- <script src="js/api.js" defer></script> -->
-    <!-- <script src="js/menu.js" defer></script> -->
-    <!-- <script src="js/returnTop.js" defer></script> -->
-    <!-- <script src="js/progressBar.js" defer></script>  -->
-    <!-- <script src="js/script.js" defer></script>
-    <script src="js/api.js" defer></script> -->
 </head>
 
 <body>
     <div class="progress-container">
         <div class="progress-bar" id="progress-bar"></div>
     </div>
+
+    <div id="popup" class="popup">
+        <div class="popup__content">
+            <span class="popup__content__close" id="close-popup">&times;</span>
+            <h2 class="popup__content__h2">Suscríbete a nuestra Newsletter</h2>
+            <form id="popupForm" class="popup__content__form" novalidate>
+                <label for="email">Correo electrónico:</label>
+                <input type="text" id="email" name="email" required>
+                <!-- <button type="submit">Suscribirse</button> -->
+                 <div>
+                    <button type="submit" class="popup__content__button">Suscribirse</button>
+                 </div>
+                 
+            </form>
+            
+        </div>
+    </div>
+
     <header class="header">
         <div class="header__top">
             <h1 class="header__top__title">OXIGENShop</h1>
@@ -307,6 +319,7 @@
     <script src="js/progressBar.js"></script>
     <script src="js/returnTop.js"></script>
     <script src="js/sendForm.js"></script>
+    <script src="js/newsletter.js"></script>
     <script src="js/script.js"></script>
 </body>
 

@@ -82,7 +82,7 @@ async function sendForm(formData) {
     fetchApi.then((response) => {
         if (response.ok) {
             response.json().then((data) => {
-                console.log(data)
+                alert("Los datos han sido enviados correctamente")
             })
         }
     })
