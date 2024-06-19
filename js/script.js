@@ -1,3 +1,7 @@
+
+const dom = new domHandler();
+const slider = new Slider(dom);
+slider.slideshow();
 // const api = new CurrencyApiHandler();
 // api.getCurrencies();
 // // const currency = new Currency();

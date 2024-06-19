@@ -898,6 +898,10 @@
   background-color: #08A6E4;
 }
 
+.slider__slideshowImg {
+  display: none;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
