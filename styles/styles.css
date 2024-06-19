@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .header {
   background-color: #f8f9fa;
   padding: 1rem;
@@ -5,21 +6,50 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   width: 100%;
 }
-.header__title {
+.header__top {
+  position: relative;
+}
+.header__top__title {
   font-family: "Raleway";
   font-weight: 300;
   color: #08A6E4;
   left: 20px;
 }
-.header__menu {
+.header__top__menu {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   height: auto;
   right: 20px;
+  color: #08A6E4;
+}
+.header__top__menu:before {
+  content: "☰";
+}
+.header__top__menu.show::before {
+  content: "✖";
 }
 .header__links {
   display: none;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  list-style-type: none;
+}
+.header__links.show {
+  display: block;
+  text-align: left;
+}
+.header__links li {
+  margin: 1rem 0;
+}
+.header__links li a {
+  font-family: "Open Sans";
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.7rem;
+  color: #a5a5a5;
 }
 
 @media only screen and (min-width: 1000px) {
@@ -29,16 +59,18 @@
     justify-content: space-between;
     align-items: center;
   }
-  .header__menu {
+  .header__top__menu {
     display: none;
   }
   .header__links {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     list-style-type: none;
-    width: 50%;
-    margin-right: 3rem;
+    margin: 0 0 0 5rem;
+  }
+  .header__links li {
+    margin: 0;
+    padding-right: 5rem;
   }
   .header__links li a {
     font-family: "Open Sans";
@@ -420,6 +452,9 @@
   font-size: 2.5rem;
   font-weight: 400;
 }
+.prices__selector {
+  margin: 2rem;
+}
 .prices--red {
   border: 1px solid #FB3B64;
   border-radius: 20px;
@@ -571,8 +606,8 @@
 }
 .questions-form__h2 {
   font-family: "Raleway";
-  font-weight: 400;
-  font-size: 2.2rem;
+  font-weight: 500;
+  font-size: 2.5rem;
 }
 .questions-form__h3 {
   font-family: "Open Sans";
@@ -594,6 +629,10 @@
   position: absolute;
   left: -0.4rem;
   bottom: -0.3rem;
+}
+.questions-form .errorMsg {
+  color: red;
+  display: none;
 }
 .questions-form__form-content {
   margin: 3rem auto;
@@ -690,13 +729,12 @@
 @media only screen and (min-width: 1000px) {
   .questions-form {
     display: flex;
-    margin: 2rem auto;
-    margin-right: 20rem;
-    margin-left: 30rem;
-    width: auto;
+    justify-content: center;
+    width: 100%;
+    padding: 0 20rem;
   }
   .questions-form__form-content {
-    width: 40%;
+    min-width: 30rem;
   }
   .questions-form__h2 {
     margin-bottom: 1rem;
@@ -708,6 +746,7 @@
     display: flex;
     flex-direction: column;
     padding-top: 2.5rem;
+    margin: 0;
   }
   .contacts__text {
     display: flex;
@@ -715,16 +754,18 @@
   }
   .contacts__ul {
     display: flex;
-    justify-content: center;
     align-items: center;
     list-style: none;
-    padding: 0;
-    padding-left: 1.4rem;
+    white-space: nowrap;
   }
   .contacts__ul__li {
+    margin-right: 1rem;
+    white-space: nowrap;
+  }
+  .all-form {
     display: flex;
-    align-items: center;
-    margin-right: 20px;
+    justify-content: center;
+    width: 100%;
   }
 }
 .footer {
@@ -767,6 +808,96 @@
     margin-right: 4rem;
   }
 }
+.progress-container {
+  position: fixed;
+  width: 100%;
+  height: 5px;
+  background: #f3f3f3;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.progress-bar {
+  height: 5px;
+  background: #08A6E4;
+  width: 0%;
+}
+
+.content {
+  padding: 20px;
+  height: 2000px;
+}
+
+.returnTop {
+  padding: 1rem 1rem;
+  background-color: #08A6E4;
+  border-radius: 50%;
+  border: 1px solid;
+  position: fixed;
+  bottom: 5rem;
+  right: 0.5rem;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.popup__content {
+  text-align: center;
+  background-color: #fefefe;
+  margin: 15% auto;
+  border: 2px solid #888;
+  width: 80%;
+  position: relative;
+}
+.popup__content__h2 {
+  margin-top: 2rem;
+  font-family: "Raleway";
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+.popup__content__close {
+  color: #aaa;
+  float: right;
+  margin-right: 0.3rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.popup__content__close:hover,
+.popup__content__close :focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.popup__content__form {
+  margin-top: 2rem;
+}
+.popup__content__form input {
+  padding: 0.7rem;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+}
+.popup__content__button {
+  font-family: "Open Sans";
+  font-weight: 600;
+  margin: 2rem auto;
+  padding: 0.5rem 5rem;
+  border-radius: 20px;
+  color: white;
+  background-color: #08A6E4;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;

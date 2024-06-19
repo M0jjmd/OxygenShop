@@ -12,6 +12,10 @@
         font-weight: 400;
     }
 
+    &__selector {
+        margin: 2rem;
+    }
+
     &--red {
         border: 1px solid #FB3B64;
         border-radius: 20px;

@@ -14,15 +14,38 @@
 </head>
 
 <body>
+    <div class="progress-container">
+        <div class="progress-bar" id="progress-bar"></div>
+    </div>
+
+    <div id="popup" class="popup">
+        <div class="popup__content">
+            <span class="popup__content__close" id="close-popup">&times;</span>
+            <h2 class="popup__content__h2">Suscríbete a nuestra Newsletter</h2>
+            <form id="popupForm" class="popup__content__form" novalidate>
+                <label for="email">Correo electrónico:</label>
+                <input type="text" id="emailPopup" name="email" value="popup_submit" required>
+                <div>
+                    <button type="submit" class="popup__content__button">Suscribirse</button>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
 
     <header class="header">
-        <h1 class="header__title">OXIGENShop</h1>
-        <img src="img/Menu.png" alt="Menu" class="header__menu" />
-        <ul class="header__links">
+        <div class="header__top">
+            <h1 class="header__top__title">OXIGENShop</h1>
+            <div class="header__top__menu" id="header__menu">
+            </div>
+        </div>
+
+        <ul class="header__links" id="header__links">
             <li><a href="index.html">WHY US</a></li>
-            <li><a href="sobre.html">BENEFITS</a></li>
-            <li><a href="servicios.html">PRICES</a></li>
-            <li><a href="contacto.html">CONTACT</a></li>
+            <li><a href="#">BENEFITS</a></li>
+            <li><a href="#">PRICES</a></li>
+            <li><a href="#">CONTACT</a></li>
         </ul>
     </header>
 
@@ -149,13 +172,21 @@
     <section class="prices">
 
         <h2 class="prices__title">Pricing</h2>
+        <div class="prices__selector">
+            <select id="currency">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="GBP">GBP</option>
+            </select>
+        </div>
+
         <div class="prices__cards">
 
             <article class="prices__cards__card prices--red">
 
                 <div class="prices__cards__card__price">
-                    <h3 class="prices__cards__card__price__h3">Basic</h3>
-                    <h4 class="prices__cards__card__price__h4 prices--red--font">$0</h4>
+                    <h3 class="prices__cards__card__price__h3" id="basic">Basic</h3>
+                    <h4 class="prices__cards__card__price__h4 prices--red--font" id="basic-h4">$0</h4>
                 </div>
 
                 <ul class="prices__cards__card__benefits">
@@ -179,8 +210,8 @@
             <article class="prices__cards__card prices--blue">
 
                 <div class="prices__cards__card__price">
-                    <h3 class="prices__cards__card__price__h3">professional</h3>
-                    <h4 class="prices__cards__card__price__h4 prices--blue--font">$25</h4>
+                    <h3 class="prices__cards__card__price__h3" id="professional">professional</h3>
+                    <h4 class="prices__cards__card__price__h4 prices--blue--font" id="professional-h4">$25</h4>
                 </div>
 
                 <ul class="prices__cards__card__benefits">
@@ -198,8 +229,8 @@
             <article class="prices__cards__card prices--green">
 
                 <div class="prices__cards__card__price">
-                    <h3 class="prices__cards__card__price__h3">premium</h3>
-                    <h4 class="prices__cards__card__price__h4 prices--green--font">$60</h4>
+                    <h3 class="prices__cards__card__price__h3" id="premium">premium</h3>
+                    <h4 class="prices__cards__card__price__h4 prices--green--font" id="premium-h4">$60</h4>
                 </div>
 
                 <ul class="prices__cards__card__benefits">
@@ -220,44 +251,58 @@
 
     </section>
 
+    <div id="slider">
+
+    </div>
+
     <section class="questions-form">
-        <div class="contacts">
-            <div class="contacts__text">
-                <h2 class="questions-form__h2">Any questions?</h2>
-                <h3 class="questions-form__h3">Leave your email address or call us!</h3>
+        <div class="all-form">
+            <div class="contacts">
+                <div class="contacts__text">
+                    <h2 class="questions-form__h2">Any questions?</h2>
+                    <h3 class="questions-form__h3">Leave your email address or call us!</h3>
+                </div>
+
+                <ul class="questions-form__li questions-form__contact contacts__ul">
+                    <li class="questions-form__li contacts__ul__li"><img src="img/MailIcon2.png" />moamine517@gmail.com
+                    </li>
+                    <li class="questions-form__li contacts__ul__li"><img src="img/PhoneIcon2.png" />642 756 918</li>
+                </ul>
             </div>
 
-            <ul class="questions-form__li questions-form__contact contacts__ul">
-                <li class="questions-form__li contacts__ul__li"><img src="img/MailIcon2.png" />moamine517@gmail.com</li>
-                <li class="questions-form__li contacts__ul__li"><img src="img/PhoneIcon2.png" />123 456 789</li>
-            </ul>
+            <form class="questions-form__form-content" id="form" novalidate>
+
+                <div class="questions-form__form-content__group">
+                    <label for="name">NAME</label>
+                    <input type="text" id="name" name="name">
+                    <p id="nameErrorMessage" class="errorMsg"></p>
+                </div>
+
+                <div class="questions-form__form-content__group">
+                    <label for="email">EMAIL</label>
+                    <input type="text" id="email" name="email">
+                    <p id="emailErrorMessage" class="errorMsg"></p>
+                </div>
+
+                <label class="questions-form__form-content__checkbox">
+                    <p id="checkBoxErrorMessage" class="errorMsg"></p>
+                    <input type="checkbox" class="questions-form__form-content__checkbox__check" id="form-checkbox">
+                    <p class="checkbox__p">I hereby give consent for my personal data included in my application to be
+                        processed for the purposes of the recruitment process under the European Parliament’s and
+                        Council of
+                        the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with
+                        regard
+                        to the processing of personal data and on the free movement of such data, and repealing
+                        Directive
+                        95/46/EC (Data Protection Directive)</p>
+                    <button type="submit" class="checkbox__button" value="questions_submit">Send</button>
+                </label>
+
+            </form>
         </div>
-
-        <form class="questions-form__form-content" action="">
-
-            <div class="questions-form__form-content__group">
-                <label for="name">NAME</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-
-            <div class="questions-form__form-content__group">
-                <label for="email">EMAIL</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-
-            <label class="questions-form__form-content__checkbox">
-                <input type="checkbox" class="questions-form__form-content__checkbox__check" required>
-                <p class="checkbox__p">I hereby give consent for my personal data included in my application to be
-                    processed for the purposes of the recruitment process under the European Parliament’s and Council of
-                    the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard
-                    to the processing of personal data and on the free movement of such data, and repealing Directive
-                    95/46/EC (Data Protection Directive)</p>
-                <button type="submit" class="checkbox__button">Send</button>
-            </label>
-
-        </form>
-
     </section>
+
+    <button class="returnTop" id="returnTop">&#9650;</button>
 
     <footer class="footer">
         <div class="footer__logo-rights">
@@ -270,6 +315,15 @@
             <img src="img/Facebook2.png" alt="facebook-logo" class="facebook-logo">
         </div>
     </footer>
+
+    <script src="js/currency.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/progressBar.js"></script>
+    <script src="js/returnTop.js"></script>
+    <script src="js/sendForm.js"></script>
+    <script src="js/newsletter.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
