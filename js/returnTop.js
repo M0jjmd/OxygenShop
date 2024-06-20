@@ -20,5 +20,5 @@ document.getElementById("returnTop").addEventListener("click", function () {
             top: 0,
             behavior: "smooth"
         });
-    }, 2000);
+    }, 200);
 });

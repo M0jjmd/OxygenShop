@@ -41,7 +41,7 @@
     }
 
     &__form-content {
-        margin: 3rem auto;
+        margin: 3rem 0;
 
         &__group {
             margin-bottom: 1rem;
@@ -149,7 +149,8 @@
         padding: 0 20rem;
 
         &__form-content {
-            min-width: 30rem;
+            min-width: 20rem;
+            width: 30rem;
         }
 
         &__h2 {

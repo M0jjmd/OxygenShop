@@ -1,6 +1,8 @@
 const popup = document.getElementById("popup");
 const closePopup = document.getElementById("close-popup");
 const popupForm = document.getElementById("popup-form");
+const errorMsg = document.getElementById("popupErrorMessage");
+const emailPopup = document.getElementById("emailPopup");
 
 setTimeout(showPopup, 5000);
 
@@ -48,7 +50,6 @@ closePopup.addEventListener('click', () => {
 
 document.getElementById("popupForm").addEventListener("submit", (event) => {
     event.preventDefault();
-
     const emailRegex = /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
     const email = event.target.email.value;
 
@@ -57,13 +58,18 @@ document.getElementById("popupForm").addEventListener("submit", (event) => {
             const emailData = {
                 "email": email,
             };
-            console.log(emailData);
+            errorMsg.style.display = 'none';
+            emailPopup.style.borderBottom = "1px solid red";
             sendNewsletter(emailData);
         } else {
-            console.log("Introduzca el correo correctamente.");
+            errorMsg.style.display = 'block';
+            emailPopup.style.borderBottom = "1px solid red"
+            errorMsg.textContent = "Introduzca el correo correctamente.";
         }
     } else {
-        console.log("Introduzca un correo.");
+        errorMsg.style.display = 'block';
+        emailPopup.style.borderBottom = "1px solid red";
+        errorMsg.textContent = "Introduzca un correo.";
     }
 })
 
@@ -81,7 +87,7 @@ async function sendNewsletter(emailData) {
     fetchApi.then((response) => {
         if (response.ok) {
             response.json().then((data) => {
-                alert("Te has registrado en la newsletter correctamente")
+                alert("Te has registrado en la newsletter correctamente");
             })
             closePop();
         }

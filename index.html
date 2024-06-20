@@ -24,13 +24,12 @@
             <h2 class="popup__content__h2">Suscríbete a nuestra Newsletter</h2>
             <form id="popupForm" class="popup__content__form" novalidate>
                 <label for="email">Correo electrónico:</label>
-                <input type="text" id="emailPopup" name="email" value="popup_submit" required>
+                <input type="text" id="emailPopup" name="email" required>
+                <p id="popupErrorMessage" class="errorMsg"></p>
                 <div>
                     <button type="submit" class="popup__content__button">Suscribirse</button>
                 </div>
-
             </form>
-
         </div>
     </div>
 
@@ -65,7 +64,6 @@
 
     <h2 class="popular__h2">The most popular sales platform in country</h2>
     <section class="popular">
-
         <article class="popular__card popular__first">
             <div class="popular__card__img popular__first__img">
                 <img src="img/Ellipse1.png" alt="ellipse"
@@ -97,11 +95,9 @@
             <h2 class="popular__card__h2 popular__recognition__posts">10000+</h2>
             <h3 class="popular__card__h3 popular__recognition__added">added posts daily</h3>
         </article>
-
     </section>
 
     <section class="advertisements">
-
         <article class="advertisements__card advertisements__card__first">
 
             <div class="advertisements__card__img">
@@ -121,11 +117,9 @@
                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                 <hr class="advertisements__card__text__hr-red" />
             </div>
-
         </article>
 
         <article class="advertisements__card advertisements__card__second">
-
             <div class="advertisements__card__img">
                 <img src="img/Ellipse4.png" alt="ellipse4"
                     class="advertisements__card__img__ellipse4 advertisements__second__img__ellipse4" />
@@ -141,11 +135,9 @@
                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                 <hr class="advertisements__card__text__hr-blue" />
             </div>
-
         </article>
 
         <article class="advertisements__card advertisements__card__third">
-
             <div class="advertisements__card__text advertisements__card__third__text">
                 <h2 class="advertisements__card__h2 advertisements__card__third__h2">Inrease recognition your brand!
                 </h2>
@@ -164,9 +156,7 @@
                 <img src="img/Trumpet2.png" alt="orange-trumpet"
                     class="advertisements__card__geen-background-desk__orange-trumpet">
             </div>
-
         </article>
-
     </section>
 
     <section class="prices">
@@ -183,7 +173,6 @@
         <div class="prices__cards">
 
             <article class="prices__cards__card prices--red">
-
                 <div class="prices__cards__card__price">
                     <h3 class="prices__cards__card__price__h3" id="basic">Basic</h3>
                     <h4 class="prices__cards__card__price__h4 prices--red--font" id="basic-h4">$0</h4>
@@ -201,14 +190,10 @@
                     <li class="prices__cards__card__benefits__li"><img src="img/Cross.png" />Full
                         support</li>
                 </ul>
-
                 <button class="prices__cards__card__button prices--red--button">Begin</button>
-
             </article>
 
-
             <article class="prices__cards__card prices--blue">
-
                 <div class="prices__cards__card__price">
                     <h3 class="prices__cards__card__price__h3" id="professional">professional</h3>
                     <h4 class="prices__cards__card__price__h4 prices--blue--font" id="professional-h4">$25</h4>
@@ -221,13 +206,10 @@
                     <li class="prices__cards__card__benefits__li"><img src="img/Checkbox.png" />one years license</li>
                     <li class="prices__cards__card__benefits__li"><img src="img/Cross.png" />Full support</li>
                 </ul>
-
                 <button class="prices__cards__card__button prices--blue--button">Begin</button>
-
             </article>
 
             <article class="prices__cards__card prices--green">
-
                 <div class="prices__cards__card__price">
                     <h3 class="prices__cards__card__price__h3" id="premium">premium</h3>
                     <h4 class="prices__cards__card__price__h4 prices--green--font" id="premium-h4">$60</h4>
@@ -242,13 +224,9 @@
                     <li class="prices__cards__card__benefits__li"><img src="img/Checkbox.png" />Two years license</li>
                     <li class="prices__cards__card__benefits__li"><img src="img/Checkbox.png" />Full support</li>
                 </ul>
-
                 <button class="prices__cards__card__button prices--green--button">Begin</button>
-
             </article>
-
         </div>
-
     </section>
 
     <div id="slider-container" class="slider">
@@ -274,22 +252,22 @@
             </div>
 
             <form class="questions-form__form-content" id="form" novalidate>
-
                 <div class="questions-form__form-content__group">
                     <label for="name">NAME</label>
-                    <input type="text" id="name" name="name">
+                    <input type="text" id="name" name="name" required>
                     <p id="nameErrorMessage" class="errorMsg"></p>
                 </div>
 
                 <div class="questions-form__form-content__group">
                     <label for="email">EMAIL</label>
-                    <input type="text" id="email" name="email">
+                    <input type="text" id="email" name="email" required>
                     <p id="emailErrorMessage" class="errorMsg"></p>
                 </div>
+                <p id="checkBoxErrorMessage" class="errorMsg"></p>
 
                 <label class="questions-form__form-content__checkbox">
-                    <p id="checkBoxErrorMessage" class="errorMsg"></p>
-                    <input type="checkbox" class="questions-form__form-content__checkbox__check" id="form-checkbox">
+                    <input type="checkbox" class="questions-form__form-content__checkbox__check" id="form-checkbox"
+                        required>
                     <p class="checkbox__p">I hereby give consent for my personal data included in my application to be
                         processed for the purposes of the recruitment process under the European Parliament’s and
                         Council of
@@ -300,11 +278,9 @@
                         95/46/EC (Data Protection Directive)</p>
                     <button type="submit" class="checkbox__button" value="questions_submit">Send</button>
                 </label>
-
             </form>
         </div>
     </section>
-
     <button class="returnTop" id="returnTop">&#9650;</button>
 
     <footer class="footer">

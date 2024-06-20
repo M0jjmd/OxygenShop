@@ -1,10 +1,12 @@
 @charset "UTF-8";
 .header {
+  position: absolute;
   background-color: #f8f9fa;
   padding: 1rem;
-  position: relative;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   width: 100%;
+  top: 0;
+  z-index: 2;
 }
 .header__top {
   position: relative;
@@ -20,7 +22,7 @@
   top: 50%;
   transform: translateY(-50%);
   height: auto;
-  right: 20px;
+  right: 0;
   color: #08A6E4;
 }
 .header__top__menu:before {
@@ -47,7 +49,7 @@
 .header__links li a {
   font-family: "Open Sans";
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 0.7rem;
   color: #a5a5a5;
 }
@@ -635,7 +637,7 @@
   display: none;
 }
 .questions-form__form-content {
-  margin: 3rem auto;
+  margin: 3rem 0;
 }
 .questions-form__form-content__group {
   margin-bottom: 1rem;
@@ -734,7 +736,8 @@
     padding: 0 20rem;
   }
   .questions-form__form-content {
-    min-width: 30rem;
+    min-width: 20rem;
+    width: 30rem;
   }
   .questions-form__h2 {
     margin-bottom: 1rem;
@@ -832,17 +835,19 @@
 .returnTop {
   padding: 1rem 1rem;
   background-color: #08A6E4;
-  border-radius: 50%;
+  border-radius: 25px;
   border: 1px solid;
   position: fixed;
   bottom: 5rem;
   right: 0.5rem;
+  color: white;
+  display: none;
 }
 
 .popup {
   display: none;
   position: fixed;
-  z-index: 1;
+  z-index: 3;
   left: 0;
   top: 0;
   width: 100%;
@@ -858,6 +863,10 @@
   border: 2px solid #888;
   width: 80%;
   position: relative;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 0 0 20px rgb(46, 46, 46);
+  padding: 2rem;
 }
 .popup__content__h2 {
   margin-top: 2rem;
@@ -868,7 +877,8 @@
 .popup__content__close {
   color: #aaa;
   float: right;
-  margin-right: 0.3rem;
+  margin-right: 0.6rem;
+  margin-top: 0.3rem;
   font-size: 1.5rem;
   font-weight: bold;
 }
@@ -896,6 +906,12 @@
   border-radius: 20px;
   color: white;
   background-color: #08A6E4;
+}
+.popup__content #popupErrorMessage {
+  display: none;
+  color: red;
+  margin-left: 4.5rem;
+  margin-top: 0.5rem;
 }
 
 .slider {
