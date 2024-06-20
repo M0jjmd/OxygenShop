@@ -18,11 +18,6 @@ class Slider {
         return this.imgs[this.imgNum];
     }
 
-    goToImage(index) {
-        this.imgNum = index;
-        return this.imgs[this.imgNum];
-    }
-
     currentImg() {
         return this.imgNum;
     }

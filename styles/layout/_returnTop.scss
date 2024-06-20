@@ -1,11 +1,12 @@
 .returnTop {
     padding: 1rem 1rem;
     background-color: #08A6E4;
-    border-radius: 50%;
+    border-radius: 25px;
     border: 1px solid;
 
     position: fixed;
     bottom: 5rem;
     right: 0.5rem;
-
+    color: white;
+    display: none;
 }
