@@ -7,7 +7,7 @@ class Currency {
     }
 }
 
-async function currencyConvert(currencyType) {
+const currencyConvert = async (currencyType) => {
     const apiHandler = new CurrencyApiHandler();
     const currencies = await apiHandler.getCurrencies();
 
@@ -34,8 +34,7 @@ async function currencyConvert(currencyType) {
     }
 }
 
-
-document.getElementById("currency").addEventListener('click', () => {
+document.getElementById("currency").addEventListener('change', () => {
     let currencyType = document.getElementById("currency").value;
     currencyConvert(currencyType);
 })
