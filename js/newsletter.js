@@ -4,8 +4,6 @@ const popupForm = document.getElementById("popup-form");
 const errorMsg = document.getElementById("popupErrorMessage");
 const emailPopup = document.getElementById("emailPopup");
 
-setTimeout(showPopup, 5000);
-
 window.addEventListener('scroll', () => {
     let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
     let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
@@ -15,34 +13,34 @@ window.addEventListener('scroll', () => {
     }
 });
 
-window.onclick = function (event) {
-    if (event.target == modal) {
-        closeAndRemember();
+window.addEventListener('click', (event) => {
+    if (event.target == popup) {
+        closePop();
     }
-};
+})
 
-function showPopup() {
+const showPopup = () => {
     if (!localStorage.getItem("popupClosed")) {
         popup.style.display = 'block';
     }
 }
 
-function closePop() {
+const closePop = () => {
     popup.style.display = 'none';
     localStorage.setItem('popupClosed', true);
 }
 
-window.onclick = function (event) {
+window.addEventListener('click', (event) => {
     if (event.target == popup) {
         closePop();
     }
-};
+})
 
-document.onkeydown = function (event) {
+document.addEventListener('keydown', (event) => {
     if (event.key === 'Escape') {
         closePop();
     }
-};
+})
 
 closePopup.addEventListener('click', () => {
     closePop();
@@ -59,7 +57,9 @@ document.getElementById("popupForm").addEventListener("submit", (event) => {
                 "email": email,
             };
             errorMsg.style.display = 'none';
-            emailPopup.style.borderBottom = "1px solid red";
+            emailPopup.style.borderBottom = "1px solid #ccc";
+            event.target.email.value = "";
+            closePop();
             sendNewsletter(emailData);
         } else {
             errorMsg.style.display = 'block';
@@ -73,23 +73,29 @@ document.getElementById("popupForm").addEventListener("submit", (event) => {
     }
 })
 
-async function sendNewsletter(emailData) {
-    const url = 'https://jsonplaceholder.typicode.com/posts';
-    const data = emailData;
-    const headers = {
-        'Content-type': 'application/json',
-    }
-    const fetchApi = fetch(url, {
-        method: "POST",
-        headers: headers,
-        body: JSON.stringify(data)
-    })
-    fetchApi.then((response) => {
-        if (response.ok) {
-            response.json().then((data) => {
-                alert("Te has registrado en la newsletter correctamente");
-            })
-            closePop();
+const sendNewsletter = async (emailData) => {
+    try {
+        const url = 'https://jsonplaceholder.typicode.com/posts';
+        const data = emailData;
+        const headers = {
+            'Content-type': 'application/json',
         }
-    })
+        const fetchApi = fetch(url, {
+            method: "POST",
+            headers: headers,
+            body: JSON.stringify(data)
+        })
+        fetchApi.then((response) => {
+            if (response.ok) {
+                response.json().then((data) => {
+                    alert("Te has registrado en la newsletter correctamente");
+                })
+                closePop();
+            }
+        })
+    } catch (error) {
+        console.error('Error al postear los datos:', error);
+    }
 }
+
+setTimeout(showPopup, 5000);

@@ -66,7 +66,7 @@ document.getElementById("form").addEventListener("submit", async (event) => {
     }
 })
 
-function validateFrom(value, regex) {
+const validateFrom = (value, regex) => {
     if (!value || value.startsWith(" ") || value.length < 2 || value.lenght > 100) {
         return 1;
     } else if (!regex.test(value)) {
@@ -76,22 +76,26 @@ function validateFrom(value, regex) {
     }
 }
 
-async function sendForm(formData) {
-    const url = 'https://jsonplaceholder.typicode.com/posts';
-    const data = formData;
-    const headers = {
-        'Content-type': 'application/json',
-    }
-    const fetchApi = fetch(url, {
-        method: "POST",
-        headers: headers,
-        body: JSON.stringify(data)
-    })
-    fetchApi.then((response) => {
-        if (response.ok) {
-            response.json().then((data) => {
-                alert("Los datos han sido enviados correctamente");
-            })
+const sendForm = async (formData) => {
+    try {
+        const url = 'https://jsonplaceholder.typicode.com/posts';
+        const data = formData;
+        const headers = {
+            'Content-type': 'application/json',
         }
-    })
+        const fetchApi = fetch(url, {
+            method: "POST",
+            headers: headers,
+            body: JSON.stringify(data)
+        })
+        fetchApi.then((response) => {
+            if (response.ok) {
+                response.json().then((data) => {
+                    alert("Los datos han sido enviados correctamente");
+                })
+            }
+        })
+    } catch (error) {
+        console.error('Error al postear los datos:', error);
+    }
 }

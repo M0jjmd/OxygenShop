@@ -1,8 +1,4 @@
-window.addEventListener('scroll', () => {
-    toggleScrollTopBtn();
-});
-
-function toggleScrollTopBtn() {
+const toggleScrollTopBtn = () => {
     let scrollTopBtn = document.getElementById("returnTop");
     let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
     let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
@@ -13,6 +9,10 @@ function toggleScrollTopBtn() {
         scrollTopBtn.style.display = "none";
     }
 }
+
+window.addEventListener('scroll', () => {
+    toggleScrollTopBtn();
+});
 
 document.getElementById("returnTop").addEventListener("click", function () {
     setTimeout(function () {
