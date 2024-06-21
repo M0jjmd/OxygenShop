@@ -46,8 +46,6 @@ document.addEventListener('keydown', (event) => {
     }
 })
 
-
-
 document.getElementById("popupForm").addEventListener("submit", (event) => {
     event.preventDefault();
     const emailRegex = /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
@@ -62,7 +60,7 @@ document.getElementById("popupForm").addEventListener("submit", (event) => {
             emailPopup.style.borderBottom = "1px solid #ccc";
             event.target.email.value = "";
             closePop();
-            sendNewsletter(emailData);
+            sendForm(emailData);
         } else {
             errorMsg.style.display = 'block';
             emailPopup.style.borderBottom = "1px solid red"
@@ -74,30 +72,4 @@ document.getElementById("popupForm").addEventListener("submit", (event) => {
         errorMsg.textContent = "Introduzca un correo.";
     }
 })
-
-const sendNewsletter = async (emailData) => {
-    try {
-        const url = 'https://jsonplaceholder.typicode.com/posts';
-        const data = emailData;
-        const headers = {
-            'Content-type': 'application/json',
-        }
-        const fetchApi = fetch(url, {
-            method: "POST",
-            headers: headers,
-            body: JSON.stringify(data)
-        })
-        fetchApi.then((response) => {
-            if (response.ok) {
-                response.json().then((data) => {
-                    alert("Te has registrado en la newsletter correctamente");
-                })
-                closePop();
-            }
-        })
-    } catch (error) {
-        console.error('Error al postear los datos:', error);
-    }
-}
-
 setTimeout(showPopup, 5000);
