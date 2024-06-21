@@ -42,7 +42,7 @@ const slideshow = () => {
                 stopAutoSlide();
                 const imageUrl = slider.selectedImg(i);
                 changeImg(imageUrl);
-                // updateIndicators();
+                updateIndicators();
                 startAutoSlide();
             });
             indicatorsCont.appendChild(dot);
