@@ -18,6 +18,11 @@ class Slider {
         return this.imgs[this.imgNum];
     }
 
+    selectedImg(currentImg) {
+        this.imgNum = currentImg;
+        return this.imgs[this.imgNum];
+    }
+
     currentImg() {
         return this.imgNum;
     }
@@ -35,8 +40,9 @@ const slideshow = () => {
             dot.className = 'dot';
             dot.addEventListener('click', () => {
                 stopAutoSlide();
-                const imageUrl = slider.nextImg(i);
+                const imageUrl = slider.selectedImg(i);
                 changeImg(imageUrl);
+                // updateIndicators();
                 startAutoSlide();
             });
             indicatorsCont.appendChild(dot);
@@ -103,5 +109,4 @@ const slideshow = () => {
 
     startAutoSlide();
 };
-
 slideshow();
