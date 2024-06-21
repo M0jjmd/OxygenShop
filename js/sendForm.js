@@ -1,3 +1,37 @@
+const validateFrom = (value, regex) => {
+    if (!value || value.startsWith(" ") || value.length < 2 || value.lenght > 100) {
+        return 1;
+    } else if (!regex.test(value)) {
+        return 2;
+    } else {
+        return 3;
+    }
+}
+
+const sendForm = async (formData) => {
+    try {
+        const url = 'https://jsonplaceholder.typicode.com/posts';
+        const data = formData;
+        const headers = {
+            'Content-type': 'application/json',
+        }
+        const fetchApi = fetch(url, {
+            method: "POST",
+            headers: headers,
+            body: JSON.stringify(data)
+        })
+        fetchApi.then((response) => {
+            if (response.ok) {
+                response.json().then((data) => {
+                    alert("Los datos han sido enviados correctamente");
+                })
+            }
+        })
+    } catch (error) {
+        console.error('Error al postear los datos:', error);
+    }
+}
+
 document.getElementById("form").addEventListener("submit", async (event) => {
     event.preventDefault();
     let valid = true;
@@ -65,37 +99,3 @@ document.getElementById("form").addEventListener("submit", async (event) => {
         event.target.email.value = '';
     }
 })
-
-const validateFrom = (value, regex) => {
-    if (!value || value.startsWith(" ") || value.length < 2 || value.lenght > 100) {
-        return 1;
-    } else if (!regex.test(value)) {
-        return 2;
-    } else {
-        return 3;
-    }
-}
-
-const sendForm = async (formData) => {
-    try {
-        const url = 'https://jsonplaceholder.typicode.com/posts';
-        const data = formData;
-        const headers = {
-            'Content-type': 'application/json',
-        }
-        const fetchApi = fetch(url, {
-            method: "POST",
-            headers: headers,
-            body: JSON.stringify(data)
-        })
-        fetchApi.then((response) => {
-            if (response.ok) {
-                response.json().then((data) => {
-                    alert("Los datos han sido enviados correctamente");
-                })
-            }
-        })
-    } catch (error) {
-        console.error('Error al postear los datos:', error);
-    }
-}
